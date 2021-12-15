@@ -1,0 +1,41 @@
+Sintaksa za kreiranje tabela
+
+CREATE TABLE [dbo].[Treneri]
+(
+	[id_trenera] INT NOT NULL PRIMARY KEY, 
+    [ime] NVARCHAR(50) NOT NULL, 
+    [prezime] NVARCHAR(50) NOT NULL, 
+    [datum_rodjenja] DATE NOT NULL, 
+    [strucna_oblast] NVARCHAR(50) NOT NULL, 
+    [br_telefona] NVARCHAR(50) NOT NULL, 
+    [opis] NVARCHAR(50) NULL, 
+    [korisnicko_ime] NVARCHAR(50) NOT NULL, 
+    [sifra] NVARCHAR(50) NOT NULL
+)
+
+
+CREATE TABLE [dbo].[Korisnici]
+(
+	[id_korisnika] INT NOT NULL PRIMARY KEY, 
+    [ime] NVARCHAR(50) NOT NULL, 
+    [prezime] NVARCHAR(50) NOT NULL, 
+    [datum_rodjenja] DATE NOT NULL, 
+    [tezina] DECIMAL NOT NULL, 
+    [visina] DECIMAL NOT NULL, 
+    [pol] NVARCHAR(50) NOT NULL, 
+    [email] NVARCHAR(50) NULL, 
+    [id_trenera] INT FOREIGN KEY REFERENCES Treneri(id_trenera) NOT NULL
+)
+
+
+
+CREATE TABLE [dbo].[Vezbe]
+(
+	[id_vezbe] INT NOT NULL PRIMARY KEY, 
+    [naziv] NVARCHAR(50) NOT NULL, 
+    [regija_tela] NVARCHAR(50) NOT NULL, 
+    [broj_serija] INT NOT NULL, 
+    [broj_ponavljanja] INT NOT NULL, 
+    [id_trenera] INT FOREIGN KEY REFERENCES Treneri(id_trenera) NULL
+)
+
