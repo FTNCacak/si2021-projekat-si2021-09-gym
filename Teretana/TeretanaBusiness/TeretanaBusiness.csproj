@@ -41,10 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrenerBusiness.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.csproj">
+      <Project>{ea9d851e-e69c-4a37-b43a-37ae9774de9f}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TeretanaData\TeretanaData.csproj">
       <Project>{69f3e9b5-a33f-4ff0-91b5-d64018473057}</Project>
       <Name>TeretanaData</Name>
