@@ -13,7 +13,7 @@ namespace Shared.Models
         public string datum_rodjenja { get; set; }
         public string strucna_oblast { get; set; }
         public string broj_telefona { get; set; }
-        public string opis { get; set; }
+        public string biografija { get; set; }
         public string korisnicko_ime { get; set; }
         public string sifra { get; set; }
     }

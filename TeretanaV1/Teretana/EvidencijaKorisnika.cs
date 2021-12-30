@@ -16,5 +16,12 @@ namespace Teretana
         {
             InitializeComponent();
         }
+
+        private void btNazad_Click(object sender, EventArgs e)
+        {
+            Prijavljivanje prijavljivanje = new Prijavljivanje();
+            prijavljivanje.Show();
+            this.Hide();
+        }
     }
 }

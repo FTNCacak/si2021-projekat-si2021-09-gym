@@ -30,7 +30,7 @@ namespace TeretanaData
                 t.datum_rodjenja = Convert.ToString(dataReader.GetDateTime(3));
                 t.strucna_oblast = dataReader.GetString(4);
                 t.broj_telefona = dataReader.GetString(5);
-                t.opis = dataReader.GetString(6);
+                t.biografija = dataReader.GetString(6);
                 t.korisnicko_ime = dataReader.GetString(7);
                 t.sifra = dataReader.GetString(8);
                 listaTrenera.Add(t);

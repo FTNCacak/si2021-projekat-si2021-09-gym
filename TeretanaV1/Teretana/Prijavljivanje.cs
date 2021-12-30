@@ -54,5 +54,12 @@ namespace Teretana
                 tbSifra.Clear();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RegistracijaTrenera registracijaTrenera = new RegistracijaTrenera();
+            registracijaTrenera.Show();
+            this.Hide();
+        }
     }
 }

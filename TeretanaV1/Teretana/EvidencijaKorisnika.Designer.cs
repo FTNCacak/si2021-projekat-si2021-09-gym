@@ -282,6 +282,7 @@ namespace Teretana
             this.btNazad.TabIndex = 4;
             this.btNazad.Text = "Nazad";
             this.btNazad.UseVisualStyleBackColor = true;
+            this.btNazad.Click += new System.EventHandler(this.btNazad_Click);
             // 
             // EvidencijaKorisnika
             // 

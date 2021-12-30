@@ -77,7 +77,7 @@ namespace Teretana
             // tbBiografijaT
             // 
             this.tbBiografijaT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbBiografijaT.Location = new System.Drawing.Point(164, 247);
+            this.tbBiografijaT.Location = new System.Drawing.Point(164, 259);
             this.tbBiografijaT.Name = "tbBiografijaT";
             this.tbBiografijaT.Size = new System.Drawing.Size(140, 28);
             this.tbBiografijaT.TabIndex = 13;
@@ -86,7 +86,7 @@ namespace Teretana
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(60, 248);
+            this.label5.Location = new System.Drawing.Point(51, 260);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(98, 25);
             this.label5.TabIndex = 12;
@@ -96,7 +96,7 @@ namespace Teretana
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(32, 208);
+            this.label8.Location = new System.Drawing.Point(23, 222);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(126, 25);
             this.label8.TabIndex = 11;
@@ -105,7 +105,7 @@ namespace Teretana
             // tbBrojTelefonaT
             // 
             this.tbBrojTelefonaT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbBrojTelefonaT.Location = new System.Drawing.Point(164, 207);
+            this.tbBrojTelefonaT.Location = new System.Drawing.Point(164, 219);
             this.tbBrojTelefonaT.Name = "tbBrojTelefonaT";
             this.tbBrojTelefonaT.Size = new System.Drawing.Size(140, 28);
             this.tbBrojTelefonaT.TabIndex = 7;
@@ -115,7 +115,7 @@ namespace Teretana
             this.lbStrucnaOblast.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbStrucnaOblast.FormattingEnabled = true;
             this.lbStrucnaOblast.ItemHeight = 22;
-            this.lbStrucnaOblast.Location = new System.Drawing.Point(164, 165);
+            this.lbStrucnaOblast.Location = new System.Drawing.Point(164, 179);
             this.lbStrucnaOblast.Name = "lbStrucnaOblast";
             this.lbStrucnaOblast.Size = new System.Drawing.Size(140, 26);
             this.lbStrucnaOblast.TabIndex = 9;
@@ -123,7 +123,7 @@ namespace Teretana
             // tbDatumRodjenjaT
             // 
             this.tbDatumRodjenjaT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbDatumRodjenjaT.Location = new System.Drawing.Point(164, 121);
+            this.tbDatumRodjenjaT.Location = new System.Drawing.Point(164, 134);
             this.tbDatumRodjenjaT.Name = "tbDatumRodjenjaT";
             this.tbDatumRodjenjaT.Size = new System.Drawing.Size(140, 28);
             this.tbDatumRodjenjaT.TabIndex = 7;
@@ -131,7 +131,7 @@ namespace Teretana
             // tbPrezimeT
             // 
             this.tbPrezimeT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPrezimeT.Location = new System.Drawing.Point(164, 84);
+            this.tbPrezimeT.Location = new System.Drawing.Point(164, 97);
             this.tbPrezimeT.Name = "tbPrezimeT";
             this.tbPrezimeT.Size = new System.Drawing.Size(140, 28);
             this.tbPrezimeT.TabIndex = 6;
@@ -139,7 +139,7 @@ namespace Teretana
             // tbImeT
             // 
             this.tbImeT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbImeT.Location = new System.Drawing.Point(164, 46);
+            this.tbImeT.Location = new System.Drawing.Point(164, 60);
             this.tbImeT.Name = "tbImeT";
             this.tbImeT.Size = new System.Drawing.Size(140, 28);
             this.tbImeT.TabIndex = 5;
@@ -148,7 +148,7 @@ namespace Teretana
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(23, 166);
+            this.label4.Location = new System.Drawing.Point(6, 179);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(143, 25);
             this.label4.TabIndex = 3;
@@ -158,7 +158,7 @@ namespace Teretana
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 122);
+            this.label3.Location = new System.Drawing.Point(6, 135);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(145, 25);
             this.label3.TabIndex = 2;
@@ -168,7 +168,7 @@ namespace Teretana
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(77, 85);
+            this.label2.Location = new System.Drawing.Point(62, 97);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 25);
             this.label2.TabIndex = 1;
@@ -178,7 +178,7 @@ namespace Teretana
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(116, 47);
+            this.label1.Location = new System.Drawing.Point(99, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 25);
             this.label1.TabIndex = 0;
@@ -242,6 +242,7 @@ namespace Teretana
             this.btNazadT.TabIndex = 5;
             this.btNazadT.Text = "Nazad";
             this.btNazadT.UseVisualStyleBackColor = true;
+            this.btNazadT.Click += new System.EventHandler(this.btNazadT_Click);
             // 
             // btSacuvajT
             // 
