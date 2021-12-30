@@ -1,0 +1,37 @@
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\bin\Debug\Teretana.exe.config
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\bin\Debug\Teretana.exe
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\bin\Debug\Teretana.pdb
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\obj\Debug\Teretana.csproj.AssemblyReference.cache
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\obj\Debug\Teretana.Properties.Resources.resources
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\obj\Debug\Teretana.csproj.GenerateResource.cache
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\obj\Debug\Teretana.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\obj\Debug\Teretana.exe
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\obj\Debug\Teretana.pdb
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\obj\Debug\Teretana.Prijavljivanje.resources
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\obj\Debug\Teretana.EvidencijaKorisnika.resources
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\bin\Debug\Shared.dll
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\bin\Debug\TeretanaBusiness.dll
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\bin\Debug\TeretanaData.dll
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\bin\Debug\Shared.pdb
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\bin\Debug\TeretanaBusiness.pdb
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\bin\Debug\TeretanaData.pdb
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\obj\Debug\Teretana.csproj.CopyComplete
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\bin\Debug\Teretana.exe.config
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\bin\Debug\Teretana.exe
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\bin\Debug\Teretana.pdb
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\bin\Debug\Shared.dll
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\bin\Debug\TeretanaBusiness.dll
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\bin\Debug\TeretanaData.dll
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\bin\Debug\Shared.pdb
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\bin\Debug\TeretanaBusiness.pdb
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\bin\Debug\TeretanaData.pdb
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\obj\Debug\Teretana.csproj.AssemblyReference.cache
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\obj\Debug\Teretana.EvidencijaKorisnika.resources
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\obj\Debug\Teretana.Prijavljivanje.resources
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\obj\Debug\Teretana.Properties.Resources.resources
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\obj\Debug\Teretana.csproj.GenerateResource.cache
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\obj\Debug\Teretana.csproj.CoreCompileInputs.cache
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\obj\Debug\Teretana.csproj.CopyComplete
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\obj\Debug\Teretana.exe
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\obj\Debug\Teretana.pdb
+C:\Users\Tijana\Desktop\Teretana\Teretana\Teretana\obj\Debug\Teretana.RegistracijaTrenera.resources

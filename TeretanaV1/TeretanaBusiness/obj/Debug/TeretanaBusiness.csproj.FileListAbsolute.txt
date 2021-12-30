@@ -1,0 +1,22 @@
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\TeretanaBusiness\bin\Debug\TeretanaBusiness.dll
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\TeretanaBusiness\bin\Debug\TeretanaBusiness.pdb
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\TeretanaBusiness\bin\Debug\TeretanaData.dll
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\TeretanaBusiness\bin\Debug\TeretanaData.pdb
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\TeretanaBusiness\obj\Debug\TeretanaBusiness.csproj.AssemblyReference.cache
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\TeretanaBusiness\obj\Debug\TeretanaBusiness.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\TeretanaBusiness\obj\Debug\TeretanaBusiness.csproj.CopyComplete
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\TeretanaBusiness\obj\Debug\TeretanaBusiness.dll
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\TeretanaBusiness\obj\Debug\TeretanaBusiness.pdb
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\TeretanaBusiness\bin\Debug\Shared.dll
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\TeretanaBusiness\bin\Debug\Shared.pdb
+C:\Users\Tijana\Desktop\Teretana\Teretana\TeretanaBusiness\bin\Debug\TeretanaBusiness.dll
+C:\Users\Tijana\Desktop\Teretana\Teretana\TeretanaBusiness\bin\Debug\TeretanaBusiness.pdb
+C:\Users\Tijana\Desktop\Teretana\Teretana\TeretanaBusiness\bin\Debug\Shared.dll
+C:\Users\Tijana\Desktop\Teretana\Teretana\TeretanaBusiness\bin\Debug\TeretanaData.dll
+C:\Users\Tijana\Desktop\Teretana\Teretana\TeretanaBusiness\bin\Debug\Shared.pdb
+C:\Users\Tijana\Desktop\Teretana\Teretana\TeretanaBusiness\bin\Debug\TeretanaData.pdb
+C:\Users\Tijana\Desktop\Teretana\Teretana\TeretanaBusiness\obj\Debug\TeretanaBusiness.csproj.AssemblyReference.cache
+C:\Users\Tijana\Desktop\Teretana\Teretana\TeretanaBusiness\obj\Debug\TeretanaBusiness.csproj.CoreCompileInputs.cache
+C:\Users\Tijana\Desktop\Teretana\Teretana\TeretanaBusiness\obj\Debug\TeretanaBusiness.csproj.CopyComplete
+C:\Users\Tijana\Desktop\Teretana\Teretana\TeretanaBusiness\obj\Debug\TeretanaBusiness.dll
+C:\Users\Tijana\Desktop\Teretana\Teretana\TeretanaBusiness\obj\Debug\TeretanaBusiness.pdb

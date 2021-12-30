@@ -1,0 +1,12 @@
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Shared\bin\Debug\Shared.dll
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Shared\bin\Debug\Shared.pdb
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Shared\obj\Debug\Shared.csproj.AssemblyReference.cache
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Shared\obj\Debug\Shared.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Shared\obj\Debug\Shared.dll
+C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Shared\obj\Debug\Shared.pdb
+C:\Users\Tijana\Desktop\Teretana\Teretana\Shared\bin\Debug\Shared.dll
+C:\Users\Tijana\Desktop\Teretana\Teretana\Shared\bin\Debug\Shared.pdb
+C:\Users\Tijana\Desktop\Teretana\Teretana\Shared\obj\Debug\Shared.csproj.AssemblyReference.cache
+C:\Users\Tijana\Desktop\Teretana\Teretana\Shared\obj\Debug\Shared.csproj.CoreCompileInputs.cache
+C:\Users\Tijana\Desktop\Teretana\Teretana\Shared\obj\Debug\Shared.dll
+C:\Users\Tijana\Desktop\Teretana\Teretana\Shared\obj\Debug\Shared.pdb

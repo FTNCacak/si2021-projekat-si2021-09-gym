@@ -1,0 +1,2 @@
+C:\Users\Tijana\Documents\si2021-projekat-si2021-09-gym\Teretana\TeretanaData\obj\Debug\TeretanaData.csproj.AssemblyReference.cache
+C:\Users\Tijana\Documents\si2021-projekat-si2021-09-gym\Teretana\TeretanaData\obj\Debug\TeretanaData.csproj.CoreCompileInputs.cache
