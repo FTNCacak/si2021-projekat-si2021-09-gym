@@ -15,5 +15,13 @@ namespace TeretanaBusiness
         {
             return this.tRepo.PrijavaTrenera();
         }
+        public bool InsertTrener(Trener t)
+        {
+            if(this.tRepo.InsertTrener(t)>0)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
