@@ -30,12 +30,11 @@ namespace Teretana
         private void InitializeComponent()
         {
             this.groupBoxTrener = new System.Windows.Forms.GroupBox();
+            this.dtpDatumRodjenja = new System.Windows.Forms.DateTimePicker();
             this.tbBiografijaT = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.tbBrojTelefonaT = new System.Windows.Forms.TextBox();
-            this.lbStrucnaOblast = new System.Windows.Forms.ListBox();
-            this.tbDatumRodjenjaT = new System.Windows.Forms.TextBox();
             this.tbPrezimeT = new System.Windows.Forms.TextBox();
             this.tbImeT = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,18 +48,19 @@ namespace Teretana
             this.label6 = new System.Windows.Forms.Label();
             this.btNazadT = new System.Windows.Forms.Button();
             this.btSacuvajT = new System.Windows.Forms.Button();
+            this.cbStrucnaOblast = new System.Windows.Forms.ComboBox();
             this.groupBoxTrener.SuspendLayout();
             this.groupBoxLogin.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxTrener
             // 
+            this.groupBoxTrener.Controls.Add(this.cbStrucnaOblast);
+            this.groupBoxTrener.Controls.Add(this.dtpDatumRodjenja);
             this.groupBoxTrener.Controls.Add(this.tbBiografijaT);
             this.groupBoxTrener.Controls.Add(this.label5);
             this.groupBoxTrener.Controls.Add(this.label8);
             this.groupBoxTrener.Controls.Add(this.tbBrojTelefonaT);
-            this.groupBoxTrener.Controls.Add(this.lbStrucnaOblast);
-            this.groupBoxTrener.Controls.Add(this.tbDatumRodjenjaT);
             this.groupBoxTrener.Controls.Add(this.tbPrezimeT);
             this.groupBoxTrener.Controls.Add(this.tbImeT);
             this.groupBoxTrener.Controls.Add(this.label4);
@@ -73,6 +73,15 @@ namespace Teretana
             this.groupBoxTrener.TabIndex = 3;
             this.groupBoxTrener.TabStop = false;
             this.groupBoxTrener.Text = "Podaci o treneru";
+            // 
+            // dtpDatumRodjenja
+            // 
+            this.dtpDatumRodjenja.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.dtpDatumRodjenja.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDatumRodjenja.Location = new System.Drawing.Point(164, 137);
+            this.dtpDatumRodjenja.Name = "dtpDatumRodjenja";
+            this.dtpDatumRodjenja.Size = new System.Drawing.Size(140, 28);
+            this.dtpDatumRodjenja.TabIndex = 7;
             // 
             // tbBiografijaT
             // 
@@ -109,24 +118,6 @@ namespace Teretana
             this.tbBrojTelefonaT.Name = "tbBrojTelefonaT";
             this.tbBrojTelefonaT.Size = new System.Drawing.Size(140, 28);
             this.tbBrojTelefonaT.TabIndex = 7;
-            // 
-            // lbStrucnaOblast
-            // 
-            this.lbStrucnaOblast.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbStrucnaOblast.FormattingEnabled = true;
-            this.lbStrucnaOblast.ItemHeight = 22;
-            this.lbStrucnaOblast.Location = new System.Drawing.Point(164, 179);
-            this.lbStrucnaOblast.Name = "lbStrucnaOblast";
-            this.lbStrucnaOblast.Size = new System.Drawing.Size(140, 26);
-            this.lbStrucnaOblast.TabIndex = 9;
-            // 
-            // tbDatumRodjenjaT
-            // 
-            this.tbDatumRodjenjaT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbDatumRodjenjaT.Location = new System.Drawing.Point(164, 134);
-            this.tbDatumRodjenjaT.Name = "tbDatumRodjenjaT";
-            this.tbDatumRodjenjaT.Size = new System.Drawing.Size(140, 28);
-            this.tbDatumRodjenjaT.TabIndex = 7;
             // 
             // tbPrezimeT
             // 
@@ -253,6 +244,24 @@ namespace Teretana
             this.btSacuvajT.TabIndex = 6;
             this.btSacuvajT.Text = "Sačuvaj";
             this.btSacuvajT.UseVisualStyleBackColor = true;
+            this.btSacuvajT.Click += new System.EventHandler(this.btSacuvajT_Click);
+            // 
+            // cbStrucnaOblast
+            // 
+            this.cbStrucnaOblast.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbStrucnaOblast.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.cbStrucnaOblast.FormattingEnabled = true;
+            this.cbStrucnaOblast.Items.AddRange(new object[] {
+            "kardio",
+            "rameni pojas",
+            "ledjni pojas",
+            "grudi",
+            "biceps",
+            "regija nogu"});
+            this.cbStrucnaOblast.Location = new System.Drawing.Point(164, 178);
+            this.cbStrucnaOblast.Name = "cbStrucnaOblast";
+            this.cbStrucnaOblast.Size = new System.Drawing.Size(140, 30);
+            this.cbStrucnaOblast.TabIndex = 7;
             // 
             // RegistracijaTrenera
             // 
@@ -265,6 +274,7 @@ namespace Teretana
             this.Controls.Add(this.groupBoxTrener);
             this.Name = "RegistracijaTrenera";
             this.Text = "RegistracijaTrenera";
+            this.Load += new System.EventHandler(this.RegistracijaTrenera_Load);
             this.groupBoxTrener.ResumeLayout(false);
             this.groupBoxTrener.PerformLayout();
             this.groupBoxLogin.ResumeLayout(false);
@@ -285,8 +295,6 @@ namespace Teretana
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbImeT;
         private System.Windows.Forms.TextBox tbPrezimeT;
-        private System.Windows.Forms.TextBox tbDatumRodjenjaT;
-        private System.Windows.Forms.ListBox lbStrucnaOblast;
         private System.Windows.Forms.TextBox tbLozinkaT;
         private System.Windows.Forms.TextBox tbKorisnickoImeT;
         private System.Windows.Forms.Button btNazadT;
@@ -295,5 +303,7 @@ namespace Teretana
         private System.Windows.Forms.TextBox tbBrojTelefonaT;
         private System.Windows.Forms.TextBox tbBiografijaT;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker dtpDatumRodjenja;
+        private System.Windows.Forms.ComboBox cbStrucnaOblast;
     }
 }

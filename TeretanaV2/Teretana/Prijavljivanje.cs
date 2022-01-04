@@ -28,12 +28,11 @@ namespace Teretana
             string korIme = tbKorisnickoIme.Text.Trim();
             string sifra = tbSifra.Text.Trim();
 
-            // if()
             List<Trener> lista = this.tBusiness.Proba();
             bool pom = true;
-            for(int i=0;i<lista.Count-1; i++)
+            foreach (Trener t in lista)
             {
-                if((lista[i].korisnicko_ime==korIme && lista[i].sifra==sifra))
+                if ((t.korisnicko_ime == korIme && t.sifra == sifra))
                 {
                     EvidencijaKorisnika ek = new EvidencijaKorisnika();
                     ek.Show();
@@ -52,6 +51,7 @@ namespace Teretana
             {
                 tbKorisnickoIme.Clear();
                 tbSifra.Clear();
+                MessageBox.Show("Ne postoji trener sa unetim korisničkim imenom i šifrom.", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 

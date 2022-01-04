@@ -42,3 +42,11 @@ C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData
 C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\obj\Debug\TeretanaData.csproj.CopyComplete
 C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\obj\Debug\TeretanaData.dll
 C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\obj\Debug\TeretanaData.pdb
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\bin\Debug\TeretanaData.dll
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\bin\Debug\TeretanaData.pdb
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\bin\Debug\Shared.dll
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\bin\Debug\Shared.pdb
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\obj\Debug\TeretanaData.csproj.AssemblyReference.cache
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\obj\Debug\TeretanaData.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\obj\Debug\TeretanaData.dll
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\obj\Debug\TeretanaData.pdb
