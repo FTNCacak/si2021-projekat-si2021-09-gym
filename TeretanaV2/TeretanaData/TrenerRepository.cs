@@ -25,9 +25,10 @@ namespace TeretanaData
             while(dataReader.Read())
             {
                 Trener t = new Trener();
+                t.id_trenera = dataReader.GetInt32(0);
                 t.ime = dataReader.GetString(1);
                 t.prezime = dataReader.GetString(2);
-                t.datum_rodjenja = Convert.ToString(dataReader.GetDateTime(3));
+                t.datum_rodjenja = dataReader.GetDateTime(3);
                 t.strucna_oblast = dataReader.GetString(4);
                 t.broj_telefona = dataReader.GetString(5);
                 t.biografija = dataReader.GetString(6);

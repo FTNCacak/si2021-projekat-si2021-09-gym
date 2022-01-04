@@ -32,7 +32,8 @@ namespace Teretana
             this.dataGridViewKorisnici = new System.Windows.Forms.DataGridView();
             this.btSacuvaj = new System.Windows.Forms.Button();
             this.btIzbrisi = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxKorisnik = new System.Windows.Forms.GroupBox();
+            this.lbIzabraniTrener = new System.Windows.Forms.ListBox();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.tbTezina = new System.Windows.Forms.TextBox();
             this.tbVisina = new System.Windows.Forms.TextBox();
@@ -49,10 +50,9 @@ namespace Teretana
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lbIzabraniTrener = new System.Windows.Forms.ListBox();
             this.btNazad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKorisnici)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.groupBoxKorisnik.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridViewKorisnici
@@ -85,31 +85,41 @@ namespace Teretana
             this.btIzbrisi.Text = "Izbriši";
             this.btIzbrisi.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // groupBoxKorisnik
             // 
-            this.groupBox1.Controls.Add(this.lbIzabraniTrener);
-            this.groupBox1.Controls.Add(this.tbEmail);
-            this.groupBox1.Controls.Add(this.tbTezina);
-            this.groupBox1.Controls.Add(this.tbVisina);
-            this.groupBox1.Controls.Add(this.rbŽ);
-            this.groupBox1.Controls.Add(this.rbM);
-            this.groupBox1.Controls.Add(this.tbDatumRodjenja);
-            this.groupBox1.Controls.Add(this.tbPrezime);
-            this.groupBox1.Controls.Add(this.tbIme);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(21, 25);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(292, 330);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Podaci o korisniku";
+            this.groupBoxKorisnik.Controls.Add(this.lbIzabraniTrener);
+            this.groupBoxKorisnik.Controls.Add(this.tbEmail);
+            this.groupBoxKorisnik.Controls.Add(this.tbTezina);
+            this.groupBoxKorisnik.Controls.Add(this.tbVisina);
+            this.groupBoxKorisnik.Controls.Add(this.rbŽ);
+            this.groupBoxKorisnik.Controls.Add(this.rbM);
+            this.groupBoxKorisnik.Controls.Add(this.tbDatumRodjenja);
+            this.groupBoxKorisnik.Controls.Add(this.tbPrezime);
+            this.groupBoxKorisnik.Controls.Add(this.tbIme);
+            this.groupBoxKorisnik.Controls.Add(this.label8);
+            this.groupBoxKorisnik.Controls.Add(this.label7);
+            this.groupBoxKorisnik.Controls.Add(this.label6);
+            this.groupBoxKorisnik.Controls.Add(this.label5);
+            this.groupBoxKorisnik.Controls.Add(this.label4);
+            this.groupBoxKorisnik.Controls.Add(this.label3);
+            this.groupBoxKorisnik.Controls.Add(this.label2);
+            this.groupBoxKorisnik.Controls.Add(this.label1);
+            this.groupBoxKorisnik.Location = new System.Drawing.Point(21, 25);
+            this.groupBoxKorisnik.Name = "groupBoxKorisnik";
+            this.groupBoxKorisnik.Size = new System.Drawing.Size(292, 330);
+            this.groupBoxKorisnik.TabIndex = 3;
+            this.groupBoxKorisnik.TabStop = false;
+            this.groupBoxKorisnik.Text = "Podaci o korisniku";
+            // 
+            // lbIzabraniTrener
+            // 
+            this.lbIzabraniTrener.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIzabraniTrener.FormattingEnabled = true;
+            this.lbIzabraniTrener.ItemHeight = 22;
+            this.lbIzabraniTrener.Location = new System.Drawing.Point(146, 288);
+            this.lbIzabraniTrener.Name = "lbIzabraniTrener";
+            this.lbIzabraniTrener.Size = new System.Drawing.Size(140, 26);
+            this.lbIzabraniTrener.TabIndex = 4;
             // 
             // tbEmail
             // 
@@ -237,11 +247,11 @@ namespace Teretana
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(-1, 90);
+            this.label3.Location = new System.Drawing.Point(1, 89);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 25);
+            this.label3.Size = new System.Drawing.Size(145, 25);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Datum rodjenja:";
+            this.label3.Text = "Datum rođenja:";
             // 
             // label2
             // 
@@ -263,16 +273,6 @@ namespace Teretana
             this.label1.TabIndex = 0;
             this.label1.Text = "Ime:";
             // 
-            // lbIzabraniTrener
-            // 
-            this.lbIzabraniTrener.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbIzabraniTrener.FormattingEnabled = true;
-            this.lbIzabraniTrener.ItemHeight = 22;
-            this.lbIzabraniTrener.Location = new System.Drawing.Point(146, 288);
-            this.lbIzabraniTrener.Name = "lbIzabraniTrener";
-            this.lbIzabraniTrener.Size = new System.Drawing.Size(140, 26);
-            this.lbIzabraniTrener.TabIndex = 4;
-            // 
             // btNazad
             // 
             this.btNazad.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -290,15 +290,15 @@ namespace Teretana
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 503);
             this.Controls.Add(this.btNazad);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBoxKorisnik);
             this.Controls.Add(this.btIzbrisi);
             this.Controls.Add(this.btSacuvaj);
             this.Controls.Add(this.dataGridViewKorisnici);
             this.Name = "EvidencijaKorisnika";
             this.Text = "EvidencijaKorisnika";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKorisnici)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupBoxKorisnik.ResumeLayout(false);
+            this.groupBoxKorisnik.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -308,7 +308,7 @@ namespace Teretana
         private System.Windows.Forms.DataGridView dataGridViewKorisnici;
         private System.Windows.Forms.Button btSacuvaj;
         private System.Windows.Forms.Button btIzbrisi;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBoxKorisnik;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
