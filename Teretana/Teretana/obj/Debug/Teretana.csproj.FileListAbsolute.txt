@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\bin\Debug\Teretana.exe.config
 C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\bin\Debug\Teretana.exe
 C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\bin\Debug\Teretana.pdb
@@ -16,3 +17,6 @@ C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat 
 C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\bin\Debug\TeretanaBusiness.pdb
 C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\bin\Debug\TeretanaData.pdb
 C:\Users\Korisnik\Documents\FTN\Peti semestar\Softversko inženjerstvo\Projekat teretana\Teretana\Teretana\obj\Debug\Teretana.csproj.CopyComplete
+=======
+C:\Users\Tijana\Documents\si2021-projekat-si2021-09-gym\Teretana\Teretana\obj\Debug\Teretana.csproj.AssemblyReference.cache
+>>>>>>> 26f7eb512137c32f68df45e1d92a10777054a775

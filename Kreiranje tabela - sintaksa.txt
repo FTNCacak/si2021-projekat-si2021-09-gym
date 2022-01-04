@@ -8,7 +8,7 @@ CREATE TABLE [dbo].[Treneri]
     [datum_rodjenja] DATE NOT NULL, 
     [strucna_oblast] NVARCHAR(50) NOT NULL, 
     [br_telefona] NVARCHAR(50) NOT NULL, 
-    [opis] NVARCHAR(50) NULL, 
+    [biografija] NVARCHAR(100) NULL, 
     [korisnicko_ime] NVARCHAR(50) NOT NULL, 
     [sifra] NVARCHAR(50) NOT NULL
 )
