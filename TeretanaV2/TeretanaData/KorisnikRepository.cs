@@ -39,5 +39,41 @@ namespace TeretanaData
                 }
                 return lista;
             }
+
+        //metoda za azuriranje podataka o korisnicima u bazi
+        public int UpdateKorisnik(Korisnik korisnik)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connString))
+            {
+                string sqlCommand = "UPDATE Korisnici SET ime = @ime, prezime = @prezime, datum_rodjenja = @datum_rodjenja, tezina=@tezina, visina=@visina, pol=@pol, email=@email, id_trenera=@id_trenera WHERE id_korisnika = @id_korisnika";
+                SqlCommand command = new SqlCommand(sqlCommand, sqlConnection);
+                command.Parameters.AddWithValue("@ime", korisnik.ime);
+                command.Parameters.AddWithValue("@prezime", korisnik.prezime);
+                command.Parameters.AddWithValue("@datum_rodjenja", korisnik.datum_rodjenja);
+                command.Parameters.AddWithValue("@tezina", korisnik.tezina);
+                command.Parameters.AddWithValue("@visina", korisnik.visina);
+                command.Parameters.AddWithValue("@pol", korisnik.pol);
+                command.Parameters.AddWithValue("@email", korisnik.email);
+                command.Parameters.AddWithValue("@id_trenera", korisnik.id_trenera);
+                sqlConnection.Open();
+
+                return command.ExecuteNonQuery();
+            }
+        }
+
+        //metoda koja brise korisnika iz baze
+        public int DeleteKorisnik(int id_korisnika)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connString))
+            {
+                sqlConnection.Open();
+
+                SqlCommand command = new SqlCommand();
+                command.Connection = sqlConnection;
+                command.CommandText = "DELETE FROM Korisnici WHERE Id = " + id_korisnika;
+
+                return command.ExecuteNonQuery();
+            }
+        }
     }
 }
