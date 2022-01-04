@@ -52,5 +52,15 @@ namespace TeretanaBusiness
                 return "Brisanje korisnika nije uspelo!";
             }
         }
+
+        //metoda za ubacivanje/pamcenje korisnika
+        public bool InsertKorisnk(Korisnik k)
+        {
+            if (this.korisnikRepository.InsertKorisnik(k) > 0)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

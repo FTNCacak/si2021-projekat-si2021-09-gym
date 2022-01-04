@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Teretana"
+    "\\Teretana",
+    "\\TeretanaData"
   ],
-  "SelectedNode": "\\Teretana.sln",
+  "SelectedNode": "\\TeretanaData\\KorisnikRepository.cs",
   "PreviewInSolutionExplorer": false
 }

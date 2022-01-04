@@ -75,5 +75,19 @@ namespace TeretanaData
                 return command.ExecuteNonQuery();
             }
         }
+
+        //metoda za ubacivanje/pamcenje korisnika
+        public int InsertKorisnik(Korisnik k)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connString))
+            {
+                SqlCommand sqlCommand = new SqlCommand();
+                sqlCommand.Connection = sqlConnection;
+                sqlCommand.CommandText = string.Format("INSERT INTO Korisnici VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')",
+                    k.ime, k.prezime, k.datum_rodjenja, k.tezina, k.visina, k.pol, k.email, k.id_trenera);
+                sqlConnection.Open();
+                return sqlCommand.ExecuteNonQuery();
+            }
+        }
     }
 }
