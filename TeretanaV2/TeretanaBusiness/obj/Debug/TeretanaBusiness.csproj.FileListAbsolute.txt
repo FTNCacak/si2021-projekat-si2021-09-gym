@@ -42,3 +42,14 @@ C:\Users\Jokovic\Desktop\TeretanaV2\TeretanaBusiness\obj\Debug\TeretanaBusiness.
 C:\Users\Jokovic\Desktop\TeretanaV2\TeretanaBusiness\obj\Debug\TeretanaBusiness.csproj.CopyComplete
 C:\Users\Jokovic\Desktop\TeretanaV2\TeretanaBusiness\obj\Debug\TeretanaBusiness.dll
 C:\Users\Jokovic\Desktop\TeretanaV2\TeretanaBusiness\obj\Debug\TeretanaBusiness.pdb
+C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\bin\Debug\TeretanaBusiness.dll
+C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\bin\Debug\TeretanaBusiness.pdb
+C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\bin\Debug\Shared.dll
+C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\bin\Debug\TeretanaData.dll
+C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\bin\Debug\Shared.pdb
+C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\bin\Debug\TeretanaData.pdb
+C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\obj\Debug\TeretanaBusiness.csproj.AssemblyReference.cache
+C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\obj\Debug\TeretanaBusiness.csproj.CoreCompileInputs.cache
+C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\obj\Debug\TeretanaBusiness.csproj.CopyComplete
+C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\obj\Debug\TeretanaBusiness.dll
+C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\obj\Debug\TeretanaBusiness.pdb

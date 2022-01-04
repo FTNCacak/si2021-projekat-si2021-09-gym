@@ -30,7 +30,7 @@ namespace TeretanaData
                 t.prezime = dataReader.GetString(2);
                 t.datum_rodjenja = dataReader.GetDateTime(3);
                 t.strucna_oblast = dataReader.GetString(4);
-                t.broj_telefona = dataReader.GetString(5);
+                t.br_telefona = dataReader.GetString(5);
                 t.biografija = dataReader.GetString(6);
                 t.korisnicko_ime = dataReader.GetString(7);
                 t.sifra = dataReader.GetString(8);
@@ -38,6 +38,20 @@ namespace TeretanaData
             }
             konekcija.Close();
             return listaTrenera;
+        }
+
+        //metoda za unos trenera u bazu
+        public int InsertTrener(Trener t)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connString))
+            {
+                SqlCommand sqlCommand = new SqlCommand();
+                sqlCommand.Connection = sqlConnection;
+                sqlCommand.CommandText = string.Format("INSERT INTO Treneri VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')",
+                    t.ime,t.prezime,t.datum_rodjenja,t.strucna_oblast,t.br_telefona,t.biografija,t.korisnicko_ime,t.sifra);
+                sqlConnection.Open();
+                return sqlCommand.ExecuteNonQuery();
+            }
         }
     }
 }
