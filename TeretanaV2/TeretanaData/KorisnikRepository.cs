@@ -55,6 +55,7 @@ namespace TeretanaData
                 command.Parameters.AddWithValue("@pol", korisnik.pol);
                 command.Parameters.AddWithValue("@email", korisnik.email);
                 command.Parameters.AddWithValue("@id_trenera", korisnik.id_trenera);
+                command.Parameters.AddWithValue("@id_korisnika", korisnik.id_korisnika);
                 sqlConnection.Open();
 
                 return command.ExecuteNonQuery();
@@ -70,7 +71,7 @@ namespace TeretanaData
 
                 SqlCommand command = new SqlCommand();
                 command.Connection = sqlConnection;
-                command.CommandText = "DELETE FROM Korisnici WHERE Id = " + id_korisnika;
+                command.CommandText = "DELETE FROM Korisnici WHERE id_korisnika = " + id_korisnika;
 
                 return command.ExecuteNonQuery();
             }

@@ -28,7 +28,7 @@ namespace Teretana
             string korIme = tbKorisnickoIme.Text.Trim();
             string sifra = tbSifra.Text.Trim();
 
-            List<Trener> lista = this.tBusiness.Proba();
+            List<Trener> lista = this.tBusiness.VratiTrenere();
             bool pom = true;
             foreach (Trener t in lista)
             {

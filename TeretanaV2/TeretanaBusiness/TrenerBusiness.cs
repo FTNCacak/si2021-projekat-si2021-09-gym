@@ -11,7 +11,7 @@ namespace TeretanaBusiness
     public class TrenerBusiness
     {
         TrenerRepository tRepo = new TrenerRepository();
-        public  List<Trener> Proba()
+        public  List<Trener> VratiTrenere()
         {
             return this.tRepo.PrijavaTrenera();
         }

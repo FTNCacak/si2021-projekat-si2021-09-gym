@@ -61,7 +61,6 @@ C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBus
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\bin\Debug\TeretanaData.pdb
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\obj\Debug\TeretanaBusiness.csproj.AssemblyReference.cache
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\obj\Debug\TeretanaBusiness.csproj.CoreCompileInputs.cache
-C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\obj\Debug\TeretanaBusiness.csproj.CopyComplete
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\obj\Debug\TeretanaBusiness.dll
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\obj\Debug\TeretanaBusiness.pdb
 C:\Users\Tijana\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\bin\Debug\TeretanaBusiness.dll
@@ -75,3 +74,4 @@ C:\Users\Tijana\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusin
 C:\Users\Tijana\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\obj\Debug\TeretanaBusiness.csproj.CopyComplete
 C:\Users\Tijana\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\obj\Debug\TeretanaBusiness.dll
 C:\Users\Tijana\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\obj\Debug\TeretanaBusiness.pdb
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaBusiness\obj\Debug\TeretanaBusiness.csproj.CopyComplete
