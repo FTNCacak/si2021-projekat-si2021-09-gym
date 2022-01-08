@@ -30,6 +30,12 @@ namespace Teretana
         private void InitializeComponent()
         {
             this.dataGridViewKorisnici = new System.Windows.Forms.DataGridView();
+            this.ime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prezime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.visina = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tezina = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.trener = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btSacuvaj = new System.Windows.Forms.Button();
             this.btIzbrisi = new System.Windows.Forms.Button();
             this.groupBoxKorisnik = new System.Windows.Forms.GroupBox();
@@ -52,13 +58,6 @@ namespace Teretana
             this.label1 = new System.Windows.Forms.Label();
             this.btNazad = new System.Windows.Forms.Button();
             this.btAzuriraj = new System.Windows.Forms.Button();
-            this.ime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prezime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.visina = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tezina = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.trener = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKorisnici)).BeginInit();
             this.groupBoxKorisnik.SuspendLayout();
             this.SuspendLayout();
@@ -82,6 +81,54 @@ namespace Teretana
             this.dataGridViewKorisnici.Size = new System.Drawing.Size(584, 293);
             this.dataGridViewKorisnici.TabIndex = 0;
             this.dataGridViewKorisnici.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewKorisnici_CellMouseDoubleClick);
+            // 
+            // ime
+            // 
+            this.ime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.ime.HeaderText = "IME";
+            this.ime.MinimumWidth = 35;
+            this.ime.Name = "ime";
+            this.ime.Width = 60;
+            // 
+            // prezime
+            // 
+            this.prezime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.prezime.HeaderText = "PREZIME";
+            this.prezime.MinimumWidth = 70;
+            this.prezime.Name = "prezime";
+            this.prezime.Width = 97;
+            // 
+            // pol
+            // 
+            this.pol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.pol.HeaderText = "POL";
+            this.pol.MinimumWidth = 6;
+            this.pol.Name = "pol";
+            this.pol.Width = 65;
+            // 
+            // visina
+            // 
+            this.visina.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.visina.HeaderText = "VISINA";
+            this.visina.MinimumWidth = 6;
+            this.visina.Name = "visina";
+            this.visina.Width = 80;
+            // 
+            // tezina
+            // 
+            this.tezina.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.tezina.HeaderText = "TEŽINA";
+            this.tezina.MinimumWidth = 6;
+            this.tezina.Name = "tezina";
+            this.tezina.Width = 86;
+            // 
+            // trener
+            // 
+            this.trener.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.trener.HeaderText = "TRENER";
+            this.trener.MinimumWidth = 6;
+            this.trener.Name = "trener";
+            this.trener.Width = 94;
             // 
             // btSacuvaj
             // 
@@ -330,69 +377,11 @@ namespace Teretana
             this.btAzuriraj.UseVisualStyleBackColor = true;
             this.btAzuriraj.Click += new System.EventHandler(this.btAzuriraj_Click);
             // 
-            // ime
-            // 
-            this.ime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.ime.HeaderText = "IME";
-            this.ime.MinimumWidth = 35;
-            this.ime.Name = "ime";
-            this.ime.Width = 60;
-            // 
-            // prezime
-            // 
-            this.prezime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.prezime.HeaderText = "PREZIME";
-            this.prezime.MinimumWidth = 70;
-            this.prezime.Name = "prezime";
-            this.prezime.Width = 97;
-            // 
-            // pol
-            // 
-            this.pol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.pol.HeaderText = "POL";
-            this.pol.MinimumWidth = 6;
-            this.pol.Name = "pol";
-            this.pol.Width = 65;
-            // 
-            // visina
-            // 
-            this.visina.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.visina.HeaderText = "VISINA";
-            this.visina.MinimumWidth = 6;
-            this.visina.Name = "visina";
-            this.visina.Width = 80;
-            // 
-            // tezina
-            // 
-            this.tezina.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.tezina.HeaderText = "TEŽINA";
-            this.tezina.MinimumWidth = 6;
-            this.tezina.Name = "tezina";
-            this.tezina.Width = 86;
-            // 
-            // trener
-            // 
-            this.trener.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.trener.HeaderText = "TRENER";
-            this.trener.MinimumWidth = 6;
-            this.trener.Name = "trener";
-            this.trener.Width = 94;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(276, 431);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 17);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "label9";
-            // 
             // EvidencijaKorisnika
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(968, 503);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.btAzuriraj);
             this.Controls.Add(this.btNazad);
             this.Controls.Add(this.groupBoxKorisnik);
@@ -402,12 +391,10 @@ namespace Teretana
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EvidencijaKorisnika";
             this.Text = "EvidencijaKorisnika";
-            this.Load += new System.EventHandler(this.EvidencijaKorisnika_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKorisnici)).EndInit();
             this.groupBoxKorisnik.ResumeLayout(false);
             this.groupBoxKorisnik.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -442,6 +429,5 @@ namespace Teretana
         private System.Windows.Forms.DataGridViewTextBoxColumn visina;
         private System.Windows.Forms.DataGridViewTextBoxColumn tezina;
         private System.Windows.Forms.DataGridViewTextBoxColumn trener;
-        private System.Windows.Forms.Label label9;
     }
 }

@@ -27,19 +27,6 @@ namespace Teretana
             prijavljivanje.Show();
             this.Hide();
         }
-
-        private void EvidencijaKorisnika_Load(object sender, EventArgs e)
-        {
-            List<Trener> lista = new List<Trener>();
-            lista = this.trenerBussines.VratiTrenere();
-            foreach(Trener t in lista)
-            {
-                cbIzabraniTrener.Items.Add(t.ime +" " +t.prezime);
-                cbIzabraniTrener.SelectedItem = t.ime + " " + t.prezime;
-            }
-
-            osveziSpisak();
-        }
         private void btSacuvaj_Click(object sender, EventArgs e)
         {
             if (tbIme.Text == "" || tbPrezime.Text == "" || tbTezina.Text == "" || tbVisina.Text == ""
@@ -103,16 +90,19 @@ namespace Teretana
 
         private void btIzbrisi_Click(object sender, EventArgs e)
         {
-            int indeksReda = dataGridViewKorisnici.CurrentRow.Index;
-            string ime = (string)dataGridViewKorisnici.Rows[indeksReda].Cells[0].Value;
-            string prezime= (string)dataGridViewKorisnici.Rows[indeksReda].Cells[1].Value;
-            decimal visina= Convert.ToDecimal( dataGridViewKorisnici.Rows[indeksReda].Cells[3].Value);
+            if (DialogResult.Yes == MessageBox.Show("Da li sigurno želite obrisati korisnika?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+            {
+                int indeksReda = dataGridViewKorisnici.CurrentRow.Index;
+                string ime = (string)dataGridViewKorisnici.Rows[indeksReda].Cells[0].Value;
+                string prezime = (string)dataGridViewKorisnici.Rows[indeksReda].Cells[1].Value;
+                decimal visina = Convert.ToDecimal(dataGridViewKorisnici.Rows[indeksReda].Cells[3].Value);
 
-            int idKor = VratiIdKorisnkia(ime, prezime, visina);
-            this.korisnikBussines.DeleteKorisnik(idKor);
+                int idKor = VratiIdKorisnkia(ime, prezime, visina);
+                this.korisnikBussines.DeleteKorisnik(idKor);
 
-            dataGridViewKorisnici.Rows.Clear();
-            osveziSpisak();
+                dataGridViewKorisnici.Rows.Clear();
+                osveziSpisak();
+            }
         }
 
         private void dataGridViewKorisnici_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -153,27 +143,34 @@ namespace Teretana
 
         private void btAzuriraj_Click(object sender, EventArgs e)
         {
-            Korisnik k = new Korisnik();
-            k.ime = tbIme.Text;
-            k.prezime = tbPrezime.Text;
-            if (rbM.Checked)
-                k.pol = "muški";
+            if (tbIme.Text == "" || tbPrezime.Text == "" || tbTezina.Text == "" || tbVisina.Text == "")
+            {
+                MessageBox.Show("Dvoklikom miša odaberite korisnika čije podatke želite ažurirati", "Greška!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
             else
-                k.pol = "ženski";
-            
-            k.datum_rodjenja = dtpDatumRodjenja.Value;
-            k.visina = Convert.ToDecimal(tbVisina.Text);
-            k.tezina = Convert.ToDecimal(tbTezina.Text);
-            k.email = tbEmail.Text;
-            k.id_trenera = VratiIdTrenera();
-            k.id_korisnika = VratiIdKorisnkia((string)dataGridViewKorisnici.Rows[dataGridViewKorisnici.CurrentRow.Index].Cells[0].Value,
-                (string)dataGridViewKorisnici.Rows[dataGridViewKorisnici.CurrentRow.Index].Cells[1].Value,
-                Convert.ToDecimal(dataGridViewKorisnici.Rows[dataGridViewKorisnici.CurrentRow.Index].Cells[3].Value));
+            {
+                Korisnik k = new Korisnik();
+                k.ime = tbIme.Text;
+                k.prezime = tbPrezime.Text;
+                if (rbM.Checked)
+                    k.pol = "muški";
+                else
+                    k.pol = "ženski";
 
-            this.korisnikBussines.UpdateKorisnik(k);
+                k.datum_rodjenja = dtpDatumRodjenja.Value;
+                k.visina = Convert.ToDecimal(tbVisina.Text);
+                k.tezina = Convert.ToDecimal(tbTezina.Text);
+                k.email = tbEmail.Text;
+                k.id_trenera = VratiIdTrenera();
+                k.id_korisnika = VratiIdKorisnkia((string)dataGridViewKorisnici.Rows[dataGridViewKorisnici.CurrentRow.Index].Cells[0].Value,
+                    (string)dataGridViewKorisnici.Rows[dataGridViewKorisnici.CurrentRow.Index].Cells[1].Value,
+                    Convert.ToDecimal(dataGridViewKorisnici.Rows[dataGridViewKorisnici.CurrentRow.Index].Cells[3].Value));
 
-            dataGridViewKorisnici.Rows.Clear();
-            osveziSpisak();
+                this.korisnikBussines.UpdateKorisnik(k);
+
+                dataGridViewKorisnici.Rows.Clear();
+                osveziSpisak();
+            }
         }
         private int VratiIdTrenera()
         {
