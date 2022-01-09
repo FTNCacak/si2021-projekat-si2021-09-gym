@@ -29,10 +29,22 @@ namespace Teretana
 
         private void btSacuvajT_Click(object sender, EventArgs e)
         {
+            bool duplikat = false;
+            List<Trener> lista = new List<Trener>();
+            lista = this.trenerBussines.VratiTrenere();
+            foreach (Trener t in lista)
+            {
+                if (tbKorisnickoImeT.Text == t.korisnicko_ime)
+                    duplikat = true;
+            }
             if (tbImeT.Text == "" || tbPrezimeT.Text == "" || tbBrojTelefonaT.Text == "" ||
-                tbKorisnickoImeT.Text == "" || tbLozinkaT.Text == "")
+                tbKorisnickoImeT.Text == "" || tbLozinkaT.Text == "" || cbStrucnaOblast.SelectedIndex==-1)
             {
                 MessageBox.Show("Morate uneti vrednost u obavezna polja.", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if(duplikat)
+            {
+                MessageBox.Show("Već postoji korisnik sa identičnim korisničkim imenom", "Greška!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
@@ -50,7 +62,7 @@ namespace Teretana
                 tbImeT.Clear();
                 tbPrezimeT.Clear();
                 dtpDatumRodjenja.Value = DateTime.Today;
-                cbStrucnaOblast.SelectedItem = "kardio";
+                cbStrucnaOblast.SelectedIndex = -1;
                 tbBrojTelefonaT.Clear();
                 tbBiografijaT.Clear();
                 tbKorisnickoImeT.Clear();
@@ -58,9 +70,5 @@ namespace Teretana
             }
         }
 
-        private void RegistracijaTrenera_Load(object sender, EventArgs e)
-        {
-            cbStrucnaOblast.SelectedItem = "kardio";
-        }
     }
 }

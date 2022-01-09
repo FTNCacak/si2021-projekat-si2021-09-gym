@@ -59,4 +59,3 @@ C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\TeretanaData\obj\Debug\Tere
 C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\TeretanaData\obj\Debug\TeretanaData.csproj.CopyComplete
 C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\TeretanaData\obj\Debug\TeretanaData.dll
 C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\TeretanaData\obj\Debug\TeretanaData.pdb
-C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\obj\Debug\TeretanaData.csproj.CopyComplete

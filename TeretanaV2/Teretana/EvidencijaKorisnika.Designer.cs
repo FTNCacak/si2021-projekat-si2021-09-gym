@@ -206,6 +206,8 @@ namespace Teretana
             this.cbIzabraniTrener.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbIzabraniTrener.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.cbIzabraniTrener.FormattingEnabled = true;
+            this.cbIzabraniTrener.Items.AddRange(new object[] {
+            "Mateja Pantelic"});
             this.cbIzabraniTrener.Location = new System.Drawing.Point(149, 288);
             this.cbIzabraniTrener.Name = "cbIzabraniTrener";
             this.cbIzabraniTrener.Size = new System.Drawing.Size(140, 30);
@@ -391,6 +393,7 @@ namespace Teretana
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EvidencijaKorisnika";
             this.Text = "EvidencijaKorisnika";
+            this.Load += new System.EventHandler(this.EvidencijaKorisnika_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKorisnici)).EndInit();
             this.groupBoxKorisnik.ResumeLayout(false);
             this.groupBoxKorisnik.PerformLayout();

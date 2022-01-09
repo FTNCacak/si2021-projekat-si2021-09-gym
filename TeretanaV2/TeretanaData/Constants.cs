@@ -12,6 +12,6 @@ namespace TeretanaData
 
         //public static string connString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog = TeretanaDB; Integrated Security = True; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
-        public static string connString = "Data Source=(localdb)\ProjectsV13;Initial Catalog=TeretanaDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        public static string connString = "Data Source=(localdb)\\ProjectsV13;Initial Catalog=TeretanaDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
     }
 }

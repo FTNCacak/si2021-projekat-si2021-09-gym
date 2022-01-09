@@ -30,7 +30,7 @@ namespace Teretana
         private void btSacuvaj_Click(object sender, EventArgs e)
         {
             if (tbIme.Text == "" || tbPrezime.Text == "" || tbTezina.Text == "" || tbVisina.Text == ""
-                || (rbM.Checked==false && rbŽ.Checked==false))
+                || (rbM.Checked==false && rbŽ.Checked==false) || cbIzabraniTrener.SelectedIndex==-1)
             {
                 MessageBox.Show("Morate uneti vrednost u obavezna polja.", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
@@ -55,7 +55,9 @@ namespace Teretana
                 tbTezina.Clear();
                 tbVisina.Clear();
                 tbEmail.Clear();
-                dtpDatumRodjenja.Value = Convert.ToDateTime("9/11/2003");
+                rbŽ.Checked = false;
+                rbM.Checked = false;
+                dtpDatumRodjenja.Value = DateTime.Today;
 
                 dataGridViewKorisnici.Rows.Clear();
                 osveziSpisak();
@@ -139,6 +141,7 @@ namespace Teretana
             tbEmail.Text = email;
             dtpDatumRodjenja.Value = rodjenje;
             cbIzabraniTrener.SelectedItem = trener;
+
         }
 
         private void btAzuriraj_Click(object sender, EventArgs e)
@@ -170,6 +173,16 @@ namespace Teretana
 
                 dataGridViewKorisnici.Rows.Clear();
                 osveziSpisak();
+
+                tbIme.Clear();
+                tbPrezime.Clear();
+                tbTezina.Clear();
+                tbVisina.Clear();
+                tbEmail.Clear();
+                rbM.Checked = false;
+                rbŽ.Checked = false;
+                cbIzabraniTrener.SelectedIndex = -1;
+                dtpDatumRodjenja.Value = DateTime.Today;
             }
         }
         private int VratiIdTrenera()
@@ -196,6 +209,18 @@ namespace Teretana
                     idKor = k.id_korisnika;
             }
             return idKor;
+        }
+
+        private void EvidencijaKorisnika_Load(object sender, EventArgs e)
+        {
+            osveziSpisak();
+            List<Trener> lista = new List<Trener>();
+            lista = this.trenerBussines.VratiTrenere();
+            foreach(Trener t in lista)
+            {
+                cbIzabraniTrener.Items.Add(t.ime + " " + t.prezime);
+            }
+            
         }
     }
 }

@@ -30,6 +30,7 @@ namespace Teretana
         private void InitializeComponent()
         {
             this.groupBoxTrener = new System.Windows.Forms.GroupBox();
+            this.cbStrucnaOblast = new System.Windows.Forms.ComboBox();
             this.dtpDatumRodjenja = new System.Windows.Forms.DateTimePicker();
             this.tbBiografijaT = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@ namespace Teretana
             this.label6 = new System.Windows.Forms.Label();
             this.btNazadT = new System.Windows.Forms.Button();
             this.btSacuvajT = new System.Windows.Forms.Button();
-            this.cbStrucnaOblast = new System.Windows.Forms.ComboBox();
             this.groupBoxTrener.SuspendLayout();
             this.groupBoxLogin.SuspendLayout();
             this.SuspendLayout();
@@ -73,6 +73,23 @@ namespace Teretana
             this.groupBoxTrener.TabIndex = 3;
             this.groupBoxTrener.TabStop = false;
             this.groupBoxTrener.Text = "Podaci o treneru";
+            // 
+            // cbStrucnaOblast
+            // 
+            this.cbStrucnaOblast.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbStrucnaOblast.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.cbStrucnaOblast.FormattingEnabled = true;
+            this.cbStrucnaOblast.Items.AddRange(new object[] {
+            "kardio",
+            "rameni pojas",
+            "ledjni pojas",
+            "grudi",
+            "biceps",
+            "regija nogu"});
+            this.cbStrucnaOblast.Location = new System.Drawing.Point(164, 178);
+            this.cbStrucnaOblast.Name = "cbStrucnaOblast";
+            this.cbStrucnaOblast.Size = new System.Drawing.Size(140, 30);
+            this.cbStrucnaOblast.TabIndex = 7;
             // 
             // dtpDatumRodjenja
             // 
@@ -246,23 +263,6 @@ namespace Teretana
             this.btSacuvajT.UseVisualStyleBackColor = true;
             this.btSacuvajT.Click += new System.EventHandler(this.btSacuvajT_Click);
             // 
-            // cbStrucnaOblast
-            // 
-            this.cbStrucnaOblast.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbStrucnaOblast.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.cbStrucnaOblast.FormattingEnabled = true;
-            this.cbStrucnaOblast.Items.AddRange(new object[] {
-            "kardio",
-            "rameni pojas",
-            "ledjni pojas",
-            "grudi",
-            "biceps",
-            "regija nogu"});
-            this.cbStrucnaOblast.Location = new System.Drawing.Point(164, 178);
-            this.cbStrucnaOblast.Name = "cbStrucnaOblast";
-            this.cbStrucnaOblast.Size = new System.Drawing.Size(140, 30);
-            this.cbStrucnaOblast.TabIndex = 7;
-            // 
             // RegistracijaTrenera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -274,7 +274,6 @@ namespace Teretana
             this.Controls.Add(this.groupBoxTrener);
             this.Name = "RegistracijaTrenera";
             this.Text = "RegistracijaTrenera";
-            this.Load += new System.EventHandler(this.RegistracijaTrenera_Load);
             this.groupBoxTrener.ResumeLayout(false);
             this.groupBoxTrener.PerformLayout();
             this.groupBoxLogin.ResumeLayout(false);

@@ -148,4 +148,3 @@ C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\Teretana\obj\Debug\Teretana
 C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\Teretana\obj\Debug\Teretana.csproj.CopyComplete
 C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\Teretana\obj\Debug\Teretana.exe
 C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\Teretana\obj\Debug\Teretana.pdb
-C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Teretana\obj\Debug\Teretana.csproj.CopyComplete
