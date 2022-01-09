@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="TeretanawWeb.Home" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Korisnici.aspx.cs" Inherits="TeretanawWeb.Korisnici" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,14 +13,27 @@
     <title>Teretana - Login</title>
 </head>
 <body>
+ 
     <form id="form1" runat="server">
            <asp:ScriptManager ID="ScriptManager1" runat="server">
 </asp:ScriptManager>
     <div class="wrapper">
-        <div class="text-light w-100">
-            <h1 class="text-center text-bold">Dobrodosli u vas AMTD GYM Centar</h1>
-            <button type="submit" id="btn1" class="btn btn-outline-light mx-auto d-block py-2 px-4 my-5  buttons" runat="server" onserverclick="Unnamed_ServerClick">Treneri</button>
-            <button type="submit" class="btn btn-outline-light mx-auto d-block py-2 px-4 my-5 buttons" runat="server" onserverclick="Unnamed_ServerClick1">Korisnici</button>
+        <div class="text-light w-75">
+            <h1 class="text-center text-bold my-3">informacije o korisnicima</h1>
+                <table class="table text-light text-center">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Ime</th>
+                        <th scope="col">Prezime</th>
+                        <th scope="col">ID Trenera</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tablecontent" runat="server">
+                    
+                    </tbody>
+                  </table>
+            <button type="submit" class="btn btn-outline-light ml-auto d-block py-2 px-4 my-5" style="font-size: 1.5rem;" id="btn2" runat="server" onserverclick="btn2_ServerClick">Nazad</button>
 
         </div>
     </div>

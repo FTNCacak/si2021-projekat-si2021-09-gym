@@ -77,3 +77,5 @@ C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\TeretanawWeb\bin\TeretanaDa
 C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\TeretanawWeb\bin\Shared.pdb
 C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\TeretanawWeb\bin\TeretanaBusiness.pdb
 C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\TeretanawWeb\bin\TeretanaData.pdb
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanawWeb\obj\Debug\TeretanawWeb.dll
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanawWeb\obj\Debug\TeretanawWeb.pdb

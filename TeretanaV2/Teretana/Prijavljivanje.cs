@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using TeretanaBusiness;
 using Shared.Models;
 using TeretanaData;
+using System.Text.RegularExpressions;
 
 namespace Teretana
 {
@@ -40,7 +41,10 @@ namespace Teretana
                     pom = false;
                 }
             }
-            if (korIme == "admin" && sifra == "admin")
+            Regex regex = new Regex(
+    @"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$",
+    RegexOptions.CultureInvariant | RegexOptions.Singleline);
+            if (regex.IsMatch(korIme) && sifra == "admin")
             {
                 EvidencijaKorisnika ek = new EvidencijaKorisnika();
                 ek.Show();

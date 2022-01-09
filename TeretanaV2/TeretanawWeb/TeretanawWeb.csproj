@@ -121,6 +121,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Korisnici.aspx" />
     <Content Include="WebForm1.aspx" />
     <Content Include="Zaposleni.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -171,6 +172,13 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Korisnici.aspx.cs">
+      <DependentUpon>Korisnici.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Korisnici.aspx.designer.cs">
+      <DependentUpon>Korisnici.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
