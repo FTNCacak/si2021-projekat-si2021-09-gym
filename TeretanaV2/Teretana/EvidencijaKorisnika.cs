@@ -11,6 +11,7 @@ using TeretanaBusiness;
 using Shared.Models;
 using Shared.Interfaces;
 using TeretanaData;//dodao
+using System.Text.RegularExpressions;
 
 namespace Teretana
 {
@@ -51,6 +52,41 @@ namespace Teretana
             {
                 MessageBox.Show("Morate uneti vrednost u obavezna polja.", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+            //Provera unosa imena
+            else if (!Regex.Match(tbIme.Text, "^[A-Z][a-z]*$").Success)
+            {
+                MessageBox.Show("Ime mora počinjati velikim slovom i mora se sastojati od slova!", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                tbIme.Focus();
+                return;
+            }
+            //Provera unosa prezimena
+            else if (!Regex.Match(tbPrezime.Text, "^[A-Z][a-z]*$").Success)
+            {
+                MessageBox.Show("Prezime mora počinjati velikim slovom i mora se sastojati od slova!", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                tbPrezime.Focus();
+                return;
+            }
+            //Provera unosa visine
+            else if (!Regex.Match(tbVisina.Text, @"^\d{2,}$").Success)
+            {
+                MessageBox.Show("Visina nije pravilno uneta (morate uneti broj)!", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                tbVisina.Focus();
+                return;
+            }
+            //Provera unosa tezine
+            else if (!Regex.Match(tbTezina.Text, @"^\d{2,}$").Success)
+            {
+                MessageBox.Show("Težina nije pravilno uneta (morate uneti broj)!", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                tbTezina.Focus();
+                return;
+            }
+            //Provera unosa e-mail adrese
+            else if (!Regex.Match(tbEmail.Text, "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$").Success)
+            {
+                MessageBox.Show("E-mail adresa nije pravilno uneta!", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                tbEmail.Focus();
+                return;
+            }
             else
             {
                 Korisnik k = new Korisnik();
@@ -78,6 +114,7 @@ namespace Teretana
 
                 dataGridViewKorisnici.Rows.Clear();
                 osveziSpisak();
+                MessageBox.Show("Korisnik je uspešno dodat!", "Ispravan unos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
         }
@@ -121,6 +158,7 @@ namespace Teretana
 
                 dataGridViewKorisnici.Rows.Clear();
                 osveziSpisak();
+                MessageBox.Show("Korisnik je obrisan!", "Poruka", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -200,6 +238,7 @@ namespace Teretana
                 rbŽ.Checked = false;
                 cbIzabraniTrener.SelectedIndex = -1;
                 dtpDatumRodjenja.Value = DateTime.Today;
+                MessageBox.Show("Ažuriranje uspešno izvršeno!", "Poruka", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
         private int VratiIdTrenera()

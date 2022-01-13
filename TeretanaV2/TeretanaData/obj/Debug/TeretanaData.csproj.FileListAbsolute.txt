@@ -71,3 +71,10 @@ C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaDat
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\bin\Debug\TeretanaData.dll.config
+C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\bin\Debug\Shared.dll.config
+C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanaData\bin\Debug\System.Threading.Tasks.Extensions.xml

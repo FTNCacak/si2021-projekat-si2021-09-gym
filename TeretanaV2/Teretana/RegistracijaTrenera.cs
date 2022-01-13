@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TeretanaBusiness;
 using Shared.Interfaces;
+using System.Text.RegularExpressions;
 
 namespace Teretana
 {
@@ -51,10 +52,40 @@ namespace Teretana
             {
                 MessageBox.Show("Morate uneti vrednost u obavezna polja.", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            else if(duplikat)
+            //Provera unosa imena
+            else if (!Regex.Match(tbImeT.Text, "^[A-Z][a-z]*$").Success)
+            {
+                MessageBox.Show("Ime mora počinjati velikim slovom i mora se sastojati od slova!", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                tbImeT.Focus();
+                return;
+            }
+            //Provera unosa prezimena
+            else if (!Regex.Match(tbPrezimeT.Text, "^[A-Z][a-z]*$").Success)
+            {
+                MessageBox.Show("Prezime mora počinjati velikim slovom i mora se sastojati od slova!", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                tbPrezimeT.Focus();
+                return;
+            }
+            //Provera unosa broja telefona
+            else if (!Regex.Match(tbBrojTelefonaT.Text, @"^[0][6]\d{1}/[1-9]\d{2,3}-\d{3,4}$").Success)
+            {
+                MessageBox.Show("Broj telefona mora biti u formatu 06*/***-****", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                tbBrojTelefonaT.Focus();
+                return;
+            }
+            //isto korisnicko ime
+            else if (duplikat)
             {
                 MessageBox.Show("Već postoji korisnik sa identičnim korisničkim imenom", "Greška!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+            //Provera unosa sifre
+            else if (!Regex.Match(tbLozinkaT.Text, @"^\w{5,}$").Success)
+            {
+                MessageBox.Show("Šifra se mora sastojati od najmanje 5 karaktera (slova, brojevi, donja crta)!", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                tbLozinkaT.Focus();
+                return;
+            }
+            
             else
             {
                 Trener t = new Trener();
@@ -76,8 +107,13 @@ namespace Teretana
                 tbBiografijaT.Clear();
                 tbKorisnickoImeT.Clear();
                 tbLozinkaT.Clear();
+                MessageBox.Show("Registracija uspešno izvršena!", "Ispravan unos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
+        private void RegistracijaTrenera_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -68,5 +68,9 @@ namespace Teretana
             this.Hide();
         }
 
+        private void Prijavljivanje_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
