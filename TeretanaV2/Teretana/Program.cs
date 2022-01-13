@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Shared.Interfaces;
+using Shared.Models;
+using TeretanaBusiness;
+using Microsoft.Extensions.DependencyInjection;
+using TeretanaData;
+
 
 namespace Teretana
 {
-    static class Program
+     static class Program
     {
         /// <summary>
         /// The main entry point for the application.
@@ -14,9 +20,44 @@ namespace Teretana
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+             Application.EnableVisualStyles();
+             Application.SetCompatibleTextRenderingDefault(false);
+             Application.Run(new Prijavljivanje());
+
+            /*Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Prijavljivanje());
+
+            var services= new ServiceCollection();
+            ConfigureServices(services);
+
+
+
+            using (ServiceProvider serviceProvider = services.BuildServiceProvider())
+            {
+                var evkor = serviceProvider.GetRequiredService<EvidencijaKorisnika>();
+                Application.Run(evkor);
+
+                var prijav = serviceProvider.GetRequiredService<Prijavljivanje>();
+                Application.Run(prijav);
+
+                var regis = serviceProvider.GetRequiredService<RegistracijaTrenera>();
+                Application.Run(regis);
+            }*/
+            
         }
+        /*private static void ConfigureServices(ServiceCollection services)
+        {
+            services.AddScoped<ITrenerBusiness, TrenerBusiness>();
+            services.AddScoped<ITrenerRepository, TrenerRepository>();
+            services.AddScoped<IKorisnikBusiness, KorisnikBusiness>();
+            services.AddScoped<IKorisnikRepository, KorisnikRepository>();
+            services.AddScoped<IVezbaBusiness, VezbaBusiness>();
+            services.AddScoped<IVezbaRepository, VezbaRepository>();
+
+
+            services.AddScoped<EvidencijaKorisnika>();
+            services.AddScoped<Prijavljivanje>();
+            services.AddScoped<RegistracijaTrenera>();
+        }*/
     }
 }

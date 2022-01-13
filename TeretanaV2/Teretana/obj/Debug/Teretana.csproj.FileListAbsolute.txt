@@ -148,3 +148,16 @@ C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\Teretana\obj\Debug\Teretana
 C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\Teretana\obj\Debug\Teretana.csproj.CopyComplete
 C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\Teretana\obj\Debug\Teretana.exe
 C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\Teretana\obj\Debug\Teretana.pdb
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Teretana\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Teretana\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Teretana\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Teretana\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Teretana\bin\Debug\Shared.dll.config
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Teretana\bin\Debug\TeretanaBusiness.dll.config
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Teretana\bin\Debug\TeretanaData.dll.config
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Teretana\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Teretana\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Teretana\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Teretana\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Teretana\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Teretana\bin\Debug\Microsoft.Extensions.DependencyInjection.xml

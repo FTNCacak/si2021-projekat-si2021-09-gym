@@ -5,17 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TeretanaData;
+using Shared.Interfaces;
 
 namespace TeretanaBusiness
 {
-    public class KorisnikBusiness
+    public class KorisnikBusiness//:IKorisnikBusiness
     {
-        //referenca od business ka data
-        private readonly KorisnikRepository korisnikRepository;
-        public KorisnikBusiness()
+        private readonly KorisnikRepository korisnikRepository = new KorisnikRepository();
+
+        /*private readonly IKorisnikRepository korisnikRepository;
+        public KorisnikBusiness(IKorisnikRepository _ikorisnikRepository)
         {
-            this.korisnikRepository = new KorisnikRepository();
-        }
+            korisnikRepository = _ikorisnikRepository;
+        }*/
 
         //metoda za vracanje liste korisnika iz baze
         public List<Korisnik> ListaKorisnika()

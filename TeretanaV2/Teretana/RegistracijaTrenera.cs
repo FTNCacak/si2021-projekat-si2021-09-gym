@@ -9,12 +9,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TeretanaBusiness;
+using Shared.Interfaces;
 
 namespace Teretana
 {
     public partial class RegistracijaTrenera : Form
     {
-        readonly TrenerBusiness trenerBussines = new TrenerBusiness();
+        private readonly TrenerBusiness itrenerBusiness=new TrenerBusiness();
+
+       /* private readonly ITrenerBusiness itrenerBusiness;
+
+        public RegistracijaTrenera(ITrenerBusiness _itrenerBusiness)
+        {
+            itrenerBusiness = _itrenerBusiness;
+            InitializeComponent();
+        }*/
         public RegistracijaTrenera()
         {
             InitializeComponent();
@@ -31,7 +40,7 @@ namespace Teretana
         {
             bool duplikat = false;
             List<Trener> lista = new List<Trener>();
-            lista = this.trenerBussines.VratiTrenere();
+            lista = this.itrenerBusiness.VratiTrenere();
             foreach (Trener t in lista)
             {
                 if (tbKorisnickoImeT.Text == t.korisnicko_ime)
@@ -57,7 +66,7 @@ namespace Teretana
                 t.biografija = tbBiografijaT.Text;
                 t.korisnicko_ime = tbKorisnickoImeT.Text.Trim();
                 t.sifra = tbLozinkaT.Text.Trim();
-                trenerBussines.InsertTrener(t);
+                itrenerBusiness.InsertTrener(t);
 
                 tbImeT.Clear();
                 tbPrezimeT.Clear();

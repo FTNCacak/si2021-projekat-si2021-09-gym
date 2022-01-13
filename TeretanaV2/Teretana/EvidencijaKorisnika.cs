@@ -9,13 +9,30 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TeretanaBusiness;
 using Shared.Models;
+using Shared.Interfaces;
+using TeretanaData;//dodao
 
 namespace Teretana
 {
     public partial class EvidencijaKorisnika : Form
     {
-        readonly TrenerBusiness trenerBussines = new TrenerBusiness();
-        readonly KorisnikBusiness korisnikBussines = new KorisnikBusiness();
+         private readonly TrenerBusiness itrenerBusiness=new TrenerBusiness();
+         private readonly KorisnikBusiness ikorisnikBusiness=new KorisnikBusiness();
+        /* private readonly ITrenerBusiness itrenerBusiness;
+
+         public EvidencijaKorisnika(ITrenerBusiness _itrenerBusiness)
+         {
+             itrenerBusiness = _itrenerBusiness;
+            InitializeComponent();
+         }
+
+         private readonly IKorisnikBusiness ikorisnikBusiness;
+
+         public EvidencijaKorisnika(IKorisnikBusiness _ikorisnikBusiness)
+         {
+             ikorisnikBusiness = _ikorisnikBusiness;
+             InitializeComponent();
+         }*/
         public EvidencijaKorisnika()
         {
             InitializeComponent();
@@ -48,7 +65,7 @@ namespace Teretana
                 k.tezina = Convert.ToDecimal(tbTezina.Text);
                 k.email = tbEmail.Text;
                 k.id_trenera = VratiIdTrenera();
-                korisnikBussines.InsertKorisnk(k);
+                ikorisnikBusiness.InsertKorisnk(k);
 
                 tbIme.Clear();
                 tbPrezime.Clear();
@@ -67,7 +84,7 @@ namespace Teretana
         private void osveziSpisak()
         {
             List<Korisnik> lista = new List<Korisnik>();
-            lista = this.korisnikBussines.ListaKorisnika();
+            lista = this.ikorisnikBusiness.ListaKorisnika();
             foreach(Korisnik k in lista)
             {
                 int n = dataGridViewKorisnici.Rows.Add();
@@ -79,7 +96,7 @@ namespace Teretana
                 int idt = k.id_trenera;
                 string trenerIspis = "";
                 List<Trener> listaTrenera = new List<Trener>();
-                listaTrenera = this.trenerBussines.VratiTrenere();
+                listaTrenera = this.itrenerBusiness.VratiTrenere();
                 foreach(Trener t in listaTrenera)
                 {
                     if(t.id_trenera==idt)
@@ -100,7 +117,7 @@ namespace Teretana
                 decimal visina = Convert.ToDecimal(dataGridViewKorisnici.Rows[indeksReda].Cells[3].Value);
 
                 int idKor = VratiIdKorisnkia(ime, prezime, visina);
-                this.korisnikBussines.DeleteKorisnik(idKor);
+                this.ikorisnikBusiness.DeleteKorisnik(idKor);
 
                 dataGridViewKorisnici.Rows.Clear();
                 osveziSpisak();
@@ -117,7 +134,7 @@ namespace Teretana
             decimal tezina= Convert.ToDecimal(dataGridViewKorisnici.Rows[indeksReda].Cells[4].Value);
             string trener= (string)dataGridViewKorisnici.Rows[indeksReda].Cells[5].Value;
             List<Korisnik> lista = new List<Korisnik>();
-            lista = this.korisnikBussines.ListaKorisnika();
+            lista = this.ikorisnikBusiness.ListaKorisnika();
             int idKor = 0;
             string email="";
             DateTime rodjenje=DateTime.Today;
@@ -169,7 +186,7 @@ namespace Teretana
                     (string)dataGridViewKorisnici.Rows[dataGridViewKorisnici.CurrentRow.Index].Cells[1].Value,
                     Convert.ToDecimal(dataGridViewKorisnici.Rows[dataGridViewKorisnici.CurrentRow.Index].Cells[3].Value));
 
-                this.korisnikBussines.UpdateKorisnik(k);
+                this.ikorisnikBusiness.UpdateKorisnik(k);
 
                 dataGridViewKorisnici.Rows.Clear();
                 osveziSpisak();
@@ -188,7 +205,7 @@ namespace Teretana
         private int VratiIdTrenera()
         {
             List<Trener> lista = new List<Trener>();
-            lista = this.trenerBussines.VratiTrenere();
+            lista = this.itrenerBusiness.VratiTrenere();
             int pomId = 0;
             string[] podaci = cbIzabraniTrener.Text.Split(' ');
             foreach (Trener t in lista)
@@ -201,7 +218,7 @@ namespace Teretana
         private int VratiIdKorisnkia(string ime, string prezime, decimal visina)
         {
             List<Korisnik> lista = new List<Korisnik>();
-            lista = this.korisnikBussines.ListaKorisnika();
+            lista = this.ikorisnikBusiness.ListaKorisnika();
             int idKor = 0;
             foreach (Korisnik k in lista)
             {
@@ -215,7 +232,7 @@ namespace Teretana
         {
             osveziSpisak();
             List<Trener> lista = new List<Trener>();
-            lista = this.trenerBussines.VratiTrenere();
+            lista = this.itrenerBusiness.VratiTrenere();
             foreach(Trener t in lista)
             {
                 cbIzabraniTrener.Items.Add(t.ime + " " + t.prezime);

@@ -103,6 +103,7 @@ namespace Teretana
             // tbBiografijaT
             // 
             this.tbBiografijaT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbBiografijaT.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tbBiografijaT.Location = new System.Drawing.Point(164, 259);
             this.tbBiografijaT.Name = "tbBiografijaT";
             this.tbBiografijaT.Size = new System.Drawing.Size(140, 28);

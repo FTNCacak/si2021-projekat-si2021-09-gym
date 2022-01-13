@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
+
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -9,16 +9,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TeretanaBusiness;
 using Shared.Models;
+using Shared.Interfaces;
 using TeretanaData;
-using System.Text.RegularExpressions;
 
 namespace Teretana
 {
     public partial class Prijavljivanje : Form
     {
-
-        //poveyati sa biynis slojem
-        private TrenerBusiness tBusiness = new TrenerBusiness();
+        private readonly TrenerBusiness tBusiness=new TrenerBusiness();
+        /*private readonly ITrenerBusiness tBusiness;
+         public Prijavljivanje(ITrenerBusiness _itrenerBusiness)
+         {
+             tBusiness = _itrenerBusiness;
+             InitializeComponent();
+         }*/
         public Prijavljivanje()
         {
             InitializeComponent();
@@ -29,7 +33,7 @@ namespace Teretana
             string korIme = tbKorisnickoIme.Text.Trim();
             string sifra = tbSifra.Text.Trim();
 
-            List<Trener> lista = this.tBusiness.VratiTrenere();
+            List<Trener>lista = this.tBusiness.VratiTrenere();
             bool pom = true;
             foreach (Trener t in lista)
             {
@@ -63,5 +67,6 @@ namespace Teretana
             registracijaTrenera.Show();
             this.Hide();
         }
+
     }
 }

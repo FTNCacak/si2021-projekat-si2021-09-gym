@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using Shared.Models;
+using Shared.Interfaces;
 
 namespace TeretanaData
 {
     //metoda koja vraca listu korisnika iz baze
-    public class KorisnikRepository
+    public class KorisnikRepository//:IKorisnikRepository
     {
             public List<Korisnik> ListaKorisnika()
             {
@@ -82,11 +83,12 @@ namespace TeretanaData
         {
             using (SqlConnection sqlConnection = new SqlConnection(Constants.connString))
             {
+                sqlConnection.Open();
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
                 sqlCommand.CommandText = string.Format("INSERT INTO Korisnici VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')",
                     k.ime, k.prezime, k.datum_rodjenja, k.tezina, k.visina, k.pol, k.email, k.id_trenera);
-                sqlConnection.Open();
+                
                 return sqlCommand.ExecuteNonQuery();
             }
         }

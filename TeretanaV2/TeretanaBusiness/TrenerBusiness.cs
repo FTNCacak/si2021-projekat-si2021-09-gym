@@ -5,12 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using TeretanaData;
 using Shared.Models;
+using Shared.Interfaces;
 
 namespace TeretanaBusiness
 {
-    public class TrenerBusiness
+    public class TrenerBusiness //: ITrenerBusiness
     {
-        TrenerRepository tRepo = new TrenerRepository();
+        private readonly TrenerRepository tRepo = new TrenerRepository();
+        /*private readonly ITrenerRepository tRepo;
+        public TrenerBusiness(ITrenerRepository _itrenerRepository)
+        {
+            tRepo = _itrenerRepository;
+        }*/
         public  List<Trener> VratiTrenere()
         {
             return this.tRepo.PrijavaTrenera();

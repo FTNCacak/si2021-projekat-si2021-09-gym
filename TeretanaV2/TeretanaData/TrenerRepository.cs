@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using Shared.Models;
+using Shared.Interfaces;
 
 namespace TeretanaData
 {
-    public class TrenerRepository
+    public class TrenerRepository//:ITrenerRepository
     {
         public List<Trener> PrijavaTrenera()
         {

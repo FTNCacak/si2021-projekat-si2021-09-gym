@@ -30,7 +30,6 @@ C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\obj\D
 C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\obj\Debug\Shared.pdb
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\bin\Debug\Shared.dll
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\bin\Debug\Shared.pdb
-C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\obj\Debug\Shared.csproj.AssemblyReference.cache
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\obj\Debug\Shared.csproj.CoreCompileInputs.cache
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\obj\Debug\Shared.dll
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\obj\Debug\Shared.pdb
@@ -40,3 +39,13 @@ C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\Shared\obj\Debug\Shared.csp
 C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\Shared\obj\Debug\Shared.csproj.CoreCompileInputs.cache
 C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\Shared\obj\Debug\Shared.dll
 C:\Users\Aleksandra\Documents\si2projekat\TeretanaV2\Shared\obj\Debug\Shared.pdb
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\bin\Debug\Shared.dll.config
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\obj\Debug\Shared.csproj.CopyComplete
