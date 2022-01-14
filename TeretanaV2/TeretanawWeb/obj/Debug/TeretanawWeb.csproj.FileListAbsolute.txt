@@ -257,3 +257,4 @@ C:\Users\Aleksandra\Documents\si3\TeretanaV2\TeretanawWeb\obj\Debug\TeretanawWeb
 C:\Users\Aleksandra\Documents\si3\TeretanaV2\TeretanawWeb\obj\Debug\TeretanawWeb.csproj.CoreCompileInputs.cache
 C:\Users\Aleksandra\Documents\si3\TeretanaV2\TeretanawWeb\obj\Debug\TeretanawWeb.dll
 C:\Users\Aleksandra\Documents\si3\TeretanaV2\TeretanawWeb\obj\Debug\TeretanawWeb.pdb
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanawWeb\obj\Debug\TeretanawWeb.csproj.CopyComplete

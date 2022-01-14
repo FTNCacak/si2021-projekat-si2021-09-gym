@@ -30,7 +30,7 @@ namespace TeretanaData
                 v.naziv = dataReader.GetString(1);
                 v.regija_tela = dataReader.GetString(2);
                 v.broj_serija = dataReader.GetInt32(3);
-                v.broj_serija = dataReader.GetInt32(4);
+                v.broj_ponavljanja = dataReader.GetInt32(4);
                 if (dataReader.IsDBNull(5))
                     v.id_trenera = -1;
                 else

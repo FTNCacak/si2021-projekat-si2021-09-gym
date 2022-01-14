@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Teretana - Login</title>
+    <title>Pregled zaposlenih</title>
 </head>
 <body>
  
@@ -19,7 +19,7 @@
 </asp:ScriptManager>
     <div class="wrapper">
         <div class="text-light w-75">
-            <h1 class="text-center text-bold my-3">informacije o zaposlenima</h1>
+            <h1 class="text-center text-bold my-3">Informacije o zaposlenima</h1>
                 <table class="table text-light text-center">
                     <thead>
                       <tr>

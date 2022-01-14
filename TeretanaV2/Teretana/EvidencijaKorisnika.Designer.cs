@@ -40,6 +40,12 @@ namespace Teretana
             this.btSacuvaj = new System.Windows.Forms.Button();
             this.btIzbrisi = new System.Windows.Forms.Button();
             this.groupBoxKorisnik = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.dtpDatumRodjenja = new System.Windows.Forms.DateTimePicker();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.cbIzabraniTrener = new System.Windows.Forms.ComboBox();
@@ -66,6 +72,7 @@ namespace Teretana
             // dataGridViewKorisnici
             // 
             this.dataGridViewKorisnici.AllowUserToAddRows = false;
+            this.dataGridViewKorisnici.AllowUserToDeleteRows = false;
             this.dataGridViewKorisnici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewKorisnici.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ime,
@@ -77,9 +84,12 @@ namespace Teretana
             this.dataGridViewKorisnici.Location = new System.Drawing.Point(357, 50);
             this.dataGridViewKorisnici.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewKorisnici.Name = "dataGridViewKorisnici";
+            this.dataGridViewKorisnici.ReadOnly = true;
+            this.dataGridViewKorisnici.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dataGridViewKorisnici.RowHeadersVisible = false;
             this.dataGridViewKorisnici.RowHeadersWidth = 51;
             this.dataGridViewKorisnici.RowTemplate.Height = 24;
-            this.dataGridViewKorisnici.Size = new System.Drawing.Size(584, 293);
+            this.dataGridViewKorisnici.Size = new System.Drawing.Size(566, 293);
             this.dataGridViewKorisnici.TabIndex = 0;
             this.dataGridViewKorisnici.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewKorisnici_CellMouseDoubleClick);
             // 
@@ -89,6 +99,7 @@ namespace Teretana
             this.ime.HeaderText = "IME";
             this.ime.MinimumWidth = 35;
             this.ime.Name = "ime";
+            this.ime.ReadOnly = true;
             this.ime.Width = 60;
             // 
             // prezime
@@ -97,6 +108,7 @@ namespace Teretana
             this.prezime.HeaderText = "PREZIME";
             this.prezime.MinimumWidth = 70;
             this.prezime.Name = "prezime";
+            this.prezime.ReadOnly = true;
             this.prezime.Width = 97;
             // 
             // pol
@@ -105,6 +117,7 @@ namespace Teretana
             this.pol.HeaderText = "POL";
             this.pol.MinimumWidth = 6;
             this.pol.Name = "pol";
+            this.pol.ReadOnly = true;
             this.pol.Width = 65;
             // 
             // visina
@@ -113,6 +126,7 @@ namespace Teretana
             this.visina.HeaderText = "VISINA";
             this.visina.MinimumWidth = 6;
             this.visina.Name = "visina";
+            this.visina.ReadOnly = true;
             this.visina.Width = 80;
             // 
             // tezina
@@ -121,15 +135,16 @@ namespace Teretana
             this.tezina.HeaderText = "TEŽINA";
             this.tezina.MinimumWidth = 6;
             this.tezina.Name = "tezina";
+            this.tezina.ReadOnly = true;
             this.tezina.Width = 86;
             // 
             // trener
             // 
-            this.trener.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.trener.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.trener.HeaderText = "TRENER";
             this.trener.MinimumWidth = 6;
             this.trener.Name = "trener";
-            this.trener.Width = 94;
+            this.trener.ReadOnly = true;
             // 
             // btSacuvaj
             // 
@@ -164,6 +179,12 @@ namespace Teretana
             // groupBoxKorisnik
             // 
             this.groupBoxKorisnik.BackColor = System.Drawing.Color.Transparent;
+            this.groupBoxKorisnik.Controls.Add(this.label14);
+            this.groupBoxKorisnik.Controls.Add(this.label13);
+            this.groupBoxKorisnik.Controls.Add(this.label12);
+            this.groupBoxKorisnik.Controls.Add(this.label11);
+            this.groupBoxKorisnik.Controls.Add(this.label10);
+            this.groupBoxKorisnik.Controls.Add(this.label9);
             this.groupBoxKorisnik.Controls.Add(this.dtpDatumRodjenja);
             this.groupBoxKorisnik.Controls.Add(this.tbEmail);
             this.groupBoxKorisnik.Controls.Add(this.cbIzabraniTrener);
@@ -186,10 +207,70 @@ namespace Teretana
             this.groupBoxKorisnik.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxKorisnik.Name = "groupBoxKorisnik";
             this.groupBoxKorisnik.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBoxKorisnik.Size = new System.Drawing.Size(311, 330);
+            this.groupBoxKorisnik.Size = new System.Drawing.Size(318, 330);
             this.groupBoxKorisnik.TabIndex = 3;
             this.groupBoxKorisnik.TabStop = false;
             this.groupBoxKorisnik.Text = "Podaci o korisniku";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(290, 289);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(23, 29);
+            this.label14.TabIndex = 20;
+            this.label14.Text = "*";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(290, 195);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(23, 29);
+            this.label13.TabIndex = 19;
+            this.label13.Text = "*";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(290, 159);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(23, 29);
+            this.label12.TabIndex = 18;
+            this.label12.Text = "*";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(290, 89);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(23, 29);
+            this.label11.TabIndex = 17;
+            this.label11.Text = "*";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(290, 54);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(23, 29);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "*";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(290, 21);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(23, 29);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "*";
             // 
             // dtpDatumRodjenja
             // 
@@ -411,7 +492,7 @@ namespace Teretana
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(968, 503);
+            this.ClientSize = new System.Drawing.Size(947, 503);
             this.Controls.Add(this.btAzuriraj);
             this.Controls.Add(this.btNazad);
             this.Controls.Add(this.groupBoxKorisnik);
@@ -420,7 +501,7 @@ namespace Teretana
             this.Controls.Add(this.dataGridViewKorisnici);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EvidencijaKorisnika";
-            this.Text = "EvidencijaKorisnika";
+            this.Text = "Evidencija korisnika";
             this.Load += new System.EventHandler(this.EvidencijaKorisnika_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKorisnici)).EndInit();
             this.groupBoxKorisnik.ResumeLayout(false);
@@ -460,5 +541,11 @@ namespace Teretana
         private System.Windows.Forms.DataGridViewTextBoxColumn visina;
         private System.Windows.Forms.DataGridViewTextBoxColumn tezina;
         private System.Windows.Forms.DataGridViewTextBoxColumn trener;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
     }
 }
