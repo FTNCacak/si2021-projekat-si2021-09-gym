@@ -11,6 +11,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Teretana - Login</title>
+    <style type="text/css">
+        .auto-style1 {
+            height: 34px;
+        }
+    </style>
 </head>
 <body>
  
@@ -19,14 +24,15 @@
 </asp:ScriptManager>
     <div class="wrapper">
         <div class="text-light w-75">
-            <h1 class="text-center text-bold my-3">informacije o vezbama</h1>
+            <h1 class="text-center text-bold my-3">Informacije o vezbama</h1>
+
                 <table class="table text-light text-center">
                     <thead>
                       <tr>
-                        <th scope="col">Naziv</th>
-                        <th scope="col">Broj ponavljanja</th>
-                        <th scope="col">Broj serija</th>
-                        <th scope="col">Regija tela</th>
+                        <th scope="col" class="auto-style1">Naziv</th>
+                        <th scope="col" class="auto-style1">Broj ponavljanja</th>
+                        <th scope="col" class="auto-style1">Broj serija</th>
+                        <th scope="col" class="auto-style1">Regija tela</th>
                       </tr>
                     </thead>
                     <tbody id="tablecontent" runat="server">

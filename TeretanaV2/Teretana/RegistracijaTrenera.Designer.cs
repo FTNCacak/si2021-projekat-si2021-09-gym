@@ -29,6 +29,7 @@ namespace Teretana
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistracijaTrenera));
             this.groupBoxTrener = new System.Windows.Forms.GroupBox();
             this.cbStrucnaOblast = new System.Windows.Forms.ComboBox();
             this.dtpDatumRodjenja = new System.Windows.Forms.DateTimePicker();
@@ -55,6 +56,7 @@ namespace Teretana
             // 
             // groupBoxTrener
             // 
+            this.groupBoxTrener.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxTrener.Controls.Add(this.cbStrucnaOblast);
             this.groupBoxTrener.Controls.Add(this.dtpDatumRodjenja);
             this.groupBoxTrener.Controls.Add(this.tbBiografijaT);
@@ -67,11 +69,12 @@ namespace Teretana
             this.groupBoxTrener.Controls.Add(this.label3);
             this.groupBoxTrener.Controls.Add(this.label2);
             this.groupBoxTrener.Controls.Add(this.label1);
-            this.groupBoxTrener.Location = new System.Drawing.Point(16, 21);
-            this.groupBoxTrener.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxTrener.ForeColor = System.Drawing.Color.Orange;
+            this.groupBoxTrener.Location = new System.Drawing.Point(21, 26);
+            this.groupBoxTrener.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxTrener.Name = "groupBoxTrener";
-            this.groupBoxTrener.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBoxTrener.Size = new System.Drawing.Size(254, 285);
+            this.groupBoxTrener.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBoxTrener.Size = new System.Drawing.Size(339, 351);
             this.groupBoxTrener.TabIndex = 3;
             this.groupBoxTrener.TabStop = false;
             this.groupBoxTrener.Text = "Podaci o treneru";
@@ -88,40 +91,40 @@ namespace Teretana
             "grudi",
             "biceps",
             "regija nogu"});
-            this.cbStrucnaOblast.Location = new System.Drawing.Point(123, 145);
-            this.cbStrucnaOblast.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbStrucnaOblast.Location = new System.Drawing.Point(164, 178);
+            this.cbStrucnaOblast.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbStrucnaOblast.Name = "cbStrucnaOblast";
-            this.cbStrucnaOblast.Size = new System.Drawing.Size(106, 25);
+            this.cbStrucnaOblast.Size = new System.Drawing.Size(140, 30);
             this.cbStrucnaOblast.TabIndex = 7;
             // 
             // dtpDatumRodjenja
             // 
             this.dtpDatumRodjenja.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.dtpDatumRodjenja.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDatumRodjenja.Location = new System.Drawing.Point(123, 111);
-            this.dtpDatumRodjenja.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpDatumRodjenja.Location = new System.Drawing.Point(164, 137);
+            this.dtpDatumRodjenja.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpDatumRodjenja.Name = "dtpDatumRodjenja";
-            this.dtpDatumRodjenja.Size = new System.Drawing.Size(106, 24);
+            this.dtpDatumRodjenja.Size = new System.Drawing.Size(140, 28);
             this.dtpDatumRodjenja.TabIndex = 7;
             // 
             // tbBiografijaT
             // 
             this.tbBiografijaT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBiografijaT.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tbBiografijaT.Location = new System.Drawing.Point(123, 210);
-            this.tbBiografijaT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbBiografijaT.Location = new System.Drawing.Point(164, 258);
+            this.tbBiografijaT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbBiografijaT.Name = "tbBiografijaT";
-            this.tbBiografijaT.Size = new System.Drawing.Size(106, 24);
+            this.tbBiografijaT.Size = new System.Drawing.Size(140, 28);
             this.tbBiografijaT.TabIndex = 13;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(38, 211);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(51, 260);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 20);
+            this.label5.Size = new System.Drawing.Size(98, 25);
             this.label5.TabIndex = 12;
             this.label5.Text = "Biografija:";
             // 
@@ -129,48 +132,48 @@ namespace Teretana
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(17, 180);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(23, 222);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(103, 20);
+            this.label8.Size = new System.Drawing.Size(126, 25);
             this.label8.TabIndex = 11;
             this.label8.Text = "Broj telefona:";
             // 
             // tbBrojTelefonaT
             // 
             this.tbBrojTelefonaT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbBrojTelefonaT.Location = new System.Drawing.Point(123, 178);
-            this.tbBrojTelefonaT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbBrojTelefonaT.Location = new System.Drawing.Point(164, 219);
+            this.tbBrojTelefonaT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbBrojTelefonaT.Name = "tbBrojTelefonaT";
-            this.tbBrojTelefonaT.Size = new System.Drawing.Size(106, 24);
+            this.tbBrojTelefonaT.Size = new System.Drawing.Size(140, 28);
             this.tbBrojTelefonaT.TabIndex = 7;
             // 
             // tbPrezimeT
             // 
             this.tbPrezimeT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPrezimeT.Location = new System.Drawing.Point(123, 79);
-            this.tbPrezimeT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbPrezimeT.Location = new System.Drawing.Point(164, 97);
+            this.tbPrezimeT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbPrezimeT.Name = "tbPrezimeT";
-            this.tbPrezimeT.Size = new System.Drawing.Size(106, 24);
+            this.tbPrezimeT.Size = new System.Drawing.Size(140, 28);
             this.tbPrezimeT.TabIndex = 6;
             // 
             // tbImeT
             // 
             this.tbImeT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbImeT.Location = new System.Drawing.Point(123, 49);
-            this.tbImeT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbImeT.Location = new System.Drawing.Point(164, 60);
+            this.tbImeT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbImeT.Name = "tbImeT";
-            this.tbImeT.Size = new System.Drawing.Size(106, 24);
+            this.tbImeT.Size = new System.Drawing.Size(140, 28);
             this.tbImeT.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(4, 145);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(5, 178);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 20);
+            this.label4.Size = new System.Drawing.Size(143, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Stručna oblast:";
             // 
@@ -178,10 +181,10 @@ namespace Teretana
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(4, 110);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(5, 135);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 20);
+            this.label3.Size = new System.Drawing.Size(145, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Datum rođenja:";
             // 
@@ -189,10 +192,10 @@ namespace Teretana
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(46, 79);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(61, 97);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 20);
+            this.label2.Size = new System.Drawing.Size(89, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Prezime:";
             // 
@@ -200,24 +203,26 @@ namespace Teretana
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(74, 50);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(99, 62);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 20);
+            this.label1.Size = new System.Drawing.Size(50, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ime:";
             // 
             // groupBoxLogin
             // 
+            this.groupBoxLogin.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxLogin.Controls.Add(this.tbLozinkaT);
             this.groupBoxLogin.Controls.Add(this.tbKorisnickoImeT);
             this.groupBoxLogin.Controls.Add(this.label7);
             this.groupBoxLogin.Controls.Add(this.label6);
-            this.groupBoxLogin.Location = new System.Drawing.Point(329, 38);
-            this.groupBoxLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxLogin.ForeColor = System.Drawing.Color.Orange;
+            this.groupBoxLogin.Location = new System.Drawing.Point(439, 47);
+            this.groupBoxLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxLogin.Name = "groupBoxLogin";
-            this.groupBoxLogin.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBoxLogin.Size = new System.Drawing.Size(234, 125);
+            this.groupBoxLogin.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBoxLogin.Size = new System.Drawing.Size(312, 154);
             this.groupBoxLogin.TabIndex = 4;
             this.groupBoxLogin.TabStop = false;
             this.groupBoxLogin.Text = "Login";
@@ -225,29 +230,29 @@ namespace Teretana
             // tbLozinkaT
             // 
             this.tbLozinkaT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbLozinkaT.Location = new System.Drawing.Point(118, 74);
-            this.tbLozinkaT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbLozinkaT.Location = new System.Drawing.Point(157, 91);
+            this.tbLozinkaT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbLozinkaT.Name = "tbLozinkaT";
-            this.tbLozinkaT.Size = new System.Drawing.Size(106, 24);
+            this.tbLozinkaT.Size = new System.Drawing.Size(140, 28);
             this.tbLozinkaT.TabIndex = 3;
             // 
             // tbKorisnickoImeT
             // 
             this.tbKorisnickoImeT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbKorisnickoImeT.Location = new System.Drawing.Point(118, 44);
-            this.tbKorisnickoImeT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbKorisnickoImeT.Location = new System.Drawing.Point(157, 54);
+            this.tbKorisnickoImeT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbKorisnickoImeT.Name = "tbKorisnickoImeT";
-            this.tbKorisnickoImeT.Size = new System.Drawing.Size(106, 24);
+            this.tbKorisnickoImeT.Size = new System.Drawing.Size(140, 28);
             this.tbKorisnickoImeT.TabIndex = 2;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(70, 75);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(93, 92);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 20);
+            this.label7.Size = new System.Drawing.Size(58, 25);
             this.label7.TabIndex = 1;
             this.label7.Text = "Šifra:";
             // 
@@ -255,20 +260,23 @@ namespace Teretana
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(4, 45);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(5, 55);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 20);
+            this.label6.Size = new System.Drawing.Size(145, 25);
             this.label6.TabIndex = 0;
             this.label6.Text = "Korisničko ime:";
             // 
             // btNazadT
             // 
+            this.btNazadT.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.btNazadT.FlatAppearance.BorderSize = 2;
+            this.btNazadT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btNazadT.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btNazadT.Location = new System.Drawing.Point(16, 362);
-            this.btNazadT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btNazadT.Location = new System.Drawing.Point(21, 446);
+            this.btNazadT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btNazadT.Name = "btNazadT";
-            this.btNazadT.Size = new System.Drawing.Size(104, 37);
+            this.btNazadT.Size = new System.Drawing.Size(139, 46);
             this.btNazadT.TabIndex = 5;
             this.btNazadT.Text = "Nazad";
             this.btNazadT.UseVisualStyleBackColor = true;
@@ -276,11 +284,14 @@ namespace Teretana
             // 
             // btSacuvajT
             // 
+            this.btSacuvajT.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.btSacuvajT.FlatAppearance.BorderSize = 2;
+            this.btSacuvajT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSacuvajT.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSacuvajT.Location = new System.Drawing.Point(394, 190);
-            this.btSacuvajT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btSacuvajT.Location = new System.Drawing.Point(525, 234);
+            this.btSacuvajT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSacuvajT.Name = "btSacuvajT";
-            this.btSacuvajT.Size = new System.Drawing.Size(104, 37);
+            this.btSacuvajT.Size = new System.Drawing.Size(139, 46);
             this.btSacuvajT.TabIndex = 6;
             this.btSacuvajT.Text = "Sačuvaj";
             this.btSacuvajT.UseVisualStyleBackColor = true;
@@ -288,17 +299,18 @@ namespace Teretana
             // 
             // RegistracijaTrenera
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 409);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(832, 503);
             this.Controls.Add(this.btSacuvajT);
             this.Controls.Add(this.btNazadT);
             this.Controls.Add(this.groupBoxLogin);
             this.Controls.Add(this.groupBoxTrener);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "RegistracijaTrenera";
             this.Text = "RegistracijaTrenera";
-            this.Load += new System.EventHandler(this.RegistracijaTrenera_Load);
             this.groupBoxTrener.ResumeLayout(false);
             this.groupBoxTrener.PerformLayout();
             this.groupBoxLogin.ResumeLayout(false);

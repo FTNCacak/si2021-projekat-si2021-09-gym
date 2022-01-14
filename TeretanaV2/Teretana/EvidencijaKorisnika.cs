@@ -81,7 +81,7 @@ namespace Teretana
                 return;
             }
             //Provera unosa e-mail adrese
-            else if (!Regex.Match(tbEmail.Text, "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$").Success)
+            else if (tbEmail.Text!="" && !Regex.Match(tbEmail.Text, "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$").Success)
             {
                 MessageBox.Show("E-mail adresa nije pravilno uneta!", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 tbEmail.Focus();

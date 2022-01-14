@@ -167,7 +167,6 @@ C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanawWe
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanawWeb\bin\Antlr3.Runtime.pdb
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanawWeb\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanawWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\TeretanawWeb\obj\Debug\TeretanawWeb.csproj.CopyComplete
 C:\Users\Aleksandra\Documents\si3\TeretanaV2\TeretanawWeb\bin\TeretanawWeb.dll.config
 C:\Users\Aleksandra\Documents\si3\TeretanaV2\TeretanawWeb\bin\TeretanawWeb.dll
 C:\Users\Aleksandra\Documents\si3\TeretanaV2\TeretanawWeb\bin\TeretanawWeb.pdb

@@ -29,6 +29,7 @@ namespace Teretana
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EvidencijaKorisnika));
             this.dataGridViewKorisnici = new System.Windows.Forms.DataGridView();
             this.ime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prezime = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -132,6 +133,9 @@ namespace Teretana
             // 
             // btSacuvaj
             // 
+            this.btSacuvaj.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.btSacuvaj.FlatAppearance.BorderSize = 2;
+            this.btSacuvaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSacuvaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSacuvaj.Location = new System.Drawing.Point(425, 357);
             this.btSacuvaj.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -144,6 +148,9 @@ namespace Teretana
             // 
             // btIzbrisi
             // 
+            this.btIzbrisi.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.btIzbrisi.FlatAppearance.BorderSize = 2;
+            this.btIzbrisi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btIzbrisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btIzbrisi.Location = new System.Drawing.Point(744, 357);
             this.btIzbrisi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -156,6 +163,7 @@ namespace Teretana
             // 
             // groupBoxKorisnik
             // 
+            this.groupBoxKorisnik.BackColor = System.Drawing.Color.Transparent;
             this.groupBoxKorisnik.Controls.Add(this.dtpDatumRodjenja);
             this.groupBoxKorisnik.Controls.Add(this.tbEmail);
             this.groupBoxKorisnik.Controls.Add(this.cbIzabraniTrener);
@@ -173,6 +181,7 @@ namespace Teretana
             this.groupBoxKorisnik.Controls.Add(this.label3);
             this.groupBoxKorisnik.Controls.Add(this.label2);
             this.groupBoxKorisnik.Controls.Add(this.label1);
+            this.groupBoxKorisnik.ForeColor = System.Drawing.Color.Orange;
             this.groupBoxKorisnik.Location = new System.Drawing.Point(21, 25);
             this.groupBoxKorisnik.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBoxKorisnik.Name = "groupBoxKorisnik";
@@ -235,6 +244,7 @@ namespace Teretana
             // 
             this.rbŽ.AutoSize = true;
             this.rbŽ.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.rbŽ.ForeColor = System.Drawing.Color.White;
             this.rbŽ.Location = new System.Drawing.Point(209, 125);
             this.rbŽ.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbŽ.Name = "rbŽ";
@@ -248,6 +258,7 @@ namespace Teretana
             // 
             this.rbM.AutoSize = true;
             this.rbM.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.rbM.ForeColor = System.Drawing.Color.White;
             this.rbM.Location = new System.Drawing.Point(157, 125);
             this.rbM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbM.Name = "rbM";
@@ -279,6 +290,7 @@ namespace Teretana
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(5, 288);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(142, 25);
@@ -289,6 +301,7 @@ namespace Teretana
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(73, 251);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(73, 25);
@@ -299,6 +312,7 @@ namespace Teretana
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(68, 195);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(78, 25);
@@ -309,6 +323,7 @@ namespace Teretana
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(75, 161);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 25);
@@ -319,6 +334,7 @@ namespace Teretana
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(101, 126);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 25);
@@ -329,6 +345,7 @@ namespace Teretana
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(1, 88);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(145, 25);
@@ -339,6 +356,7 @@ namespace Teretana
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(59, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 25);
@@ -349,6 +367,7 @@ namespace Teretana
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(99, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 25);
@@ -357,7 +376,11 @@ namespace Teretana
             // 
             // btNazad
             // 
+            this.btNazad.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.btNazad.FlatAppearance.BorderSize = 2;
+            this.btNazad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btNazad.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btNazad.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btNazad.Location = new System.Drawing.Point(21, 446);
             this.btNazad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btNazad.Name = "btNazad";
@@ -369,6 +392,9 @@ namespace Teretana
             // 
             // btAzuriraj
             // 
+            this.btAzuriraj.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.btAzuriraj.FlatAppearance.BorderSize = 2;
+            this.btAzuriraj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btAzuriraj.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btAzuriraj.Location = new System.Drawing.Point(585, 357);
             this.btAzuriraj.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -383,6 +409,8 @@ namespace Teretana
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(968, 503);
             this.Controls.Add(this.btAzuriraj);
             this.Controls.Add(this.btNazad);

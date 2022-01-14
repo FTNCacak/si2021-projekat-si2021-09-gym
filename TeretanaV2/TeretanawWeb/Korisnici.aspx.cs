@@ -34,9 +34,9 @@ namespace TeretanawWeb
                 listel.InnerText = vezba.regija_tela;
                 listonode.Controls.Add(listel);
                 tablecontent.Controls.Add(listonode);
+
             }
         }
-
         protected void btn2_ServerClick(object sender, EventArgs e)
         {
             Response.Redirect("Home.aspx");

@@ -67,9 +67,10 @@ namespace Teretana
                 return;
             }
             //Provera unosa broja telefona
-            else if (!Regex.Match(tbBrojTelefonaT.Text, @"^[0][6]\d{1}/[1-9]\d{2,3}-\d{3,4}$").Success)
+            //else if (!Regex.Match(tbBrojTelefonaT.Text, @"^[0][6]\d{1}/[1-9]\d{2,3}-\d{3,4}$").Success)
+            else if (!Regex.Match(tbBrojTelefonaT.Text, @"^\d{1,3}/[1-9]\d{2,3}-\d{3,4}$").Success)
             {
-                MessageBox.Show("Broj telefona mora biti u formatu 06*/***-****", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Broj telefona mora biti u formatu xxx/xxx-xxxx", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 tbBrojTelefonaT.Focus();
                 return;
             }
@@ -81,7 +82,7 @@ namespace Teretana
             //Provera unosa sifre
             else if (!Regex.Match(tbLozinkaT.Text, @"^\w{5,}$").Success)
             {
-                MessageBox.Show("Šifra se mora sastojati od najmanje 5 karaktera (slova, brojevi, donja crta)!", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Šifra se mora sastojati od najmanje 5 karaktera!", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 tbLozinkaT.Focus();
                 return;
             }
@@ -111,9 +112,5 @@ namespace Teretana
             }
         }
 
-        private void RegistracijaTrenera_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

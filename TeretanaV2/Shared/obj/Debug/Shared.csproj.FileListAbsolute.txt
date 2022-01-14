@@ -48,7 +48,6 @@ C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\bin\
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\obj\Debug\Shared.csproj.CopyComplete
 C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\bin\Debug\Shared.dll.config
 C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 C:\Users\Jokovic\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
@@ -69,3 +68,4 @@ C:\Users\Aleksandra\Documents\si3\TeretanaV2\Shared\obj\Debug\Shared.csproj.Asse
 C:\Users\Aleksandra\Documents\si3\TeretanaV2\Shared\obj\Debug\Shared.csproj.CoreCompileInputs.cache
 C:\Users\Aleksandra\Documents\si3\TeretanaV2\Shared\obj\Debug\Shared.dll
 C:\Users\Aleksandra\Documents\si3\TeretanaV2\Shared\obj\Debug\Shared.pdb
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\obj\Debug\Shared.csproj.AssemblyReference.cache
