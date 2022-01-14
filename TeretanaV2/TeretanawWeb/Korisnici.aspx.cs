@@ -14,24 +14,24 @@ namespace TeretanawWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           KorisnikBusiness korisnikBusiness = new KorisnikBusiness();
-            List<Korisnik> korisnici = korisnikBusiness.ListaKorisnika();
+            VezbaBusiness vezbaBusiness = new VezbaBusiness();
+            List<Vezba> vezbe = vezbaBusiness.CitanjeVezbi();
 
-            foreach (Korisnik korisnik in korisnici)
+            foreach (Vezba vezba in vezbe)
             {
                 HtmlGenericControl listonode = new HtmlGenericControl("TR");
                 HtmlGenericControl listid = new HtmlGenericControl("TD");
                 listid.Attributes.Add("scope", "row");
-                listid.InnerText = korisnik.id_korisnika.ToString();
+                listid.InnerText = vezba.naziv;
                 listonode.Controls.Add(listid);
                 HtmlGenericControl listime = new HtmlGenericControl("TD");
-                listime.InnerText = korisnik.ime;
+                listime.InnerText = vezba.broj_ponavljanja.ToString();
                 listonode.Controls.Add(listime);
                 HtmlGenericControl listprezime = new HtmlGenericControl("TD");
-                listprezime.InnerText = korisnik.prezime;
+                listprezime.InnerText = vezba.broj_serija.ToString();
                 listonode.Controls.Add(listprezime);
                 HtmlGenericControl listel = new HtmlGenericControl("TD");
-                listel.InnerText = korisnik.id_trenera.ToString();
+                listel.InnerText = vezba.regija_tela;
                 listonode.Controls.Add(listel);
                 tablecontent.Controls.Add(listonode);
             }

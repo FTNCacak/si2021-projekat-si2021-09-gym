@@ -19,14 +19,14 @@
 </asp:ScriptManager>
     <div class="wrapper">
         <div class="text-light w-75">
-            <h1 class="text-center text-bold my-3">informacije o korisnicima</h1>
+            <h1 class="text-center text-bold my-3">informacije o vezbama</h1>
                 <table class="table text-light text-center">
                     <thead>
                       <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Ime</th>
-                        <th scope="col">Prezime</th>
-                        <th scope="col">ID Trenera</th>
+                        <th scope="col">Naziv</th>
+                        <th scope="col">Broj ponavljanja</th>
+                        <th scope="col">Broj serija</th>
+                        <th scope="col">Regija tela</th>
                       </tr>
                     </thead>
                     <tbody id="tablecontent" runat="server">

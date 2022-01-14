@@ -20,7 +20,7 @@
         <div class="text-light w-100">
             <h1 class="text-center text-bold">Dobrodosli u vas AMTD GYM Centar</h1>
             <button type="submit" id="btn1" class="btn btn-outline-light mx-auto d-block py-2 px-4 my-5  buttons" runat="server" onserverclick="Unnamed_ServerClick">Treneri</button>
-            <button type="submit" class="btn btn-outline-light mx-auto d-block py-2 px-4 my-5 buttons" runat="server" onserverclick="Unnamed_ServerClick1">Korisnici</button>
+            <button type="submit" class="btn btn-outline-light mx-auto d-block py-2 px-4 my-5 buttons" runat="server" onserverclick="Unnamed_ServerClick1">Vezbe</button>
 
         </div>
     </div>

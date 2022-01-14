@@ -9,7 +9,7 @@ using Shared.Interfaces;
 
 namespace TeretanaData
 {
-    public class TrenerRepository//:ITrenerRepository
+    public class TrenerRepository:ITrenerRepository
     {
         public List<Trener> PrijavaTrenera()
         {
