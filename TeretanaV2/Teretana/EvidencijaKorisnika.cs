@@ -17,31 +17,20 @@ namespace Teretana
 {
     public partial class EvidencijaKorisnika : Form
     {
-         private readonly TrenerBusiness itrenerBusiness=new TrenerBusiness();
-         private readonly KorisnikBusiness ikorisnikBusiness=new KorisnikBusiness();
-        /* private readonly ITrenerBusiness itrenerBusiness;
 
-         public EvidencijaKorisnika(ITrenerBusiness _itrenerBusiness)
+         private readonly ITrenerBusiness itrenerBusiness;
+        private readonly IKorisnikBusiness ikorisnikBusiness;
+        public EvidencijaKorisnika(ITrenerBusiness _itrenerBusiness, IKorisnikBusiness _ikorisnikBusiness)
          {
-             itrenerBusiness = _itrenerBusiness;
+            itrenerBusiness = _itrenerBusiness;
+            ikorisnikBusiness = _ikorisnikBusiness;
             InitializeComponent();
          }
 
-         private readonly IKorisnikBusiness ikorisnikBusiness;
-
-         public EvidencijaKorisnika(IKorisnikBusiness _ikorisnikBusiness)
-         {
-             ikorisnikBusiness = _ikorisnikBusiness;
-             InitializeComponent();
-         }*/
-        public EvidencijaKorisnika()
-        {
-            InitializeComponent();
-        }
 
         private void btNazad_Click(object sender, EventArgs e)
         {
-            Prijavljivanje prijavljivanje = new Prijavljivanje();
+            Prijavljivanje prijavljivanje = new Prijavljivanje(itrenerBusiness, ikorisnikBusiness);
             prijavljivanje.Show();
             this.Hide();
         }
@@ -111,6 +100,7 @@ namespace Teretana
                 rbŽ.Checked = false;
                 rbM.Checked = false;
                 dtpDatumRodjenja.Value = DateTime.Today;
+                cbIzabraniTrener.SelectedIndex = -1;
 
                 dataGridViewKorisnici.Rows.Clear();
                 osveziSpisak();
@@ -278,5 +268,6 @@ namespace Teretana
             }
             
         }
+
     }
 }

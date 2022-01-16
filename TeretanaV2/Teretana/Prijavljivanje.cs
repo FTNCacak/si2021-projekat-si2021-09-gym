@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -16,17 +15,15 @@ namespace Teretana
 {
     public partial class Prijavljivanje : Form
     {
-        private readonly TrenerBusiness tBusiness=new TrenerBusiness();
-        /*private readonly ITrenerBusiness tBusiness;
-         public Prijavljivanje(ITrenerBusiness _itrenerBusiness)
+        private readonly ITrenerBusiness tBusiness;
+        private readonly IKorisnikBusiness ikorisnikBusiness;
+        public Prijavljivanje(ITrenerBusiness _itrenerBusiness, IKorisnikBusiness _korisnikBusiness)
          {
              tBusiness = _itrenerBusiness;
+             ikorisnikBusiness = _korisnikBusiness;
              InitializeComponent();
-         }*/
-        public Prijavljivanje()
-        {
-            InitializeComponent();
-        }
+         }
+
 
         private void btPrijaviSe_Click(object sender, EventArgs e)
         {
@@ -39,7 +36,7 @@ namespace Teretana
             {
                 if ((t.korisnicko_ime == korIme && t.sifra == sifra))
                 {
-                    EvidencijaKorisnika ek = new EvidencijaKorisnika();
+                    EvidencijaKorisnika ek = new EvidencijaKorisnika(tBusiness,ikorisnikBusiness);
                     ek.Show();
                     this.Hide();
                     
@@ -48,7 +45,7 @@ namespace Teretana
             }
             if (korIme=="admin" && sifra == "admin")
             {
-                EvidencijaKorisnika ek = new EvidencijaKorisnika();
+                EvidencijaKorisnika ek = new EvidencijaKorisnika(tBusiness, ikorisnikBusiness);
                 ek.Show();
                 this.Hide();
                 pom = false;
@@ -63,14 +60,9 @@ namespace Teretana
 
         private void button1_Click(object sender, EventArgs e)
         {
-            RegistracijaTrenera registracijaTrenera = new RegistracijaTrenera();
+            RegistracijaTrenera registracijaTrenera = new RegistracijaTrenera(tBusiness,ikorisnikBusiness);
             registracijaTrenera.Show();
             this.Hide();
-        }
-
-        private void Prijavljivanje_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

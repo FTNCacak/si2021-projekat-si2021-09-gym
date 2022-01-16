@@ -9,14 +9,13 @@ using Shared.Interfaces;
 
 namespace TeretanaBusiness
 {
-    public class TrenerBusiness //: ITrenerBusiness
+    public class TrenerBusiness : ITrenerBusiness
     {
-        private readonly TrenerRepository tRepo = new TrenerRepository();
-        /*private readonly ITrenerRepository tRepo;
+        private readonly ITrenerRepository tRepo;
         public TrenerBusiness(ITrenerRepository _itrenerRepository)
         {
             tRepo = _itrenerRepository;
-        }*/
+        }
         public  List<Trener> VratiTrenere()
         {
             return this.tRepo.PrijavaTrenera();

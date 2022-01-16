@@ -9,7 +9,7 @@ using Shared.Interfaces;
 
 namespace TeretanaData
 {
-    public class VezbaRepository//:IVezbaRepository
+    public class VezbaRepository:IVezbaRepository
     {
         public List<Vezba> CitanjeVezbi()
         {

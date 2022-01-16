@@ -19,6 +19,7 @@
 </asp:ScriptManager>
     <div class="wrapper">
         <div class="text-light w-75">
+
             <h1 class="text-center text-bold my-3">Informacije o zaposlenima</h1>
                 <table class="table text-light text-center">
                     <thead>

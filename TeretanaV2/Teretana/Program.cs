@@ -20,11 +20,7 @@ namespace Teretana
         [STAThread]
         static void Main()
         {
-             Application.EnableVisualStyles();
-             Application.SetCompatibleTextRenderingDefault(false);
-             Application.Run(new Prijavljivanje());
-
-            /*Application.EnableVisualStyles();
+            Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
             var services= new ServiceCollection();
@@ -34,18 +30,12 @@ namespace Teretana
 
             using (ServiceProvider serviceProvider = services.BuildServiceProvider())
             {
-                var evkor = serviceProvider.GetRequiredService<EvidencijaKorisnika>();
-                Application.Run(evkor);
-
                 var prijav = serviceProvider.GetRequiredService<Prijavljivanje>();
                 Application.Run(prijav);
-
-                var regis = serviceProvider.GetRequiredService<RegistracijaTrenera>();
-                Application.Run(regis);
-            }*/
+            }
             
         }
-        /*private static void ConfigureServices(ServiceCollection services)
+        private static void ConfigureServices(ServiceCollection services)
         {
             services.AddScoped<ITrenerBusiness, TrenerBusiness>();
             services.AddScoped<ITrenerRepository, TrenerRepository>();
@@ -58,6 +48,6 @@ namespace Teretana
             services.AddScoped<EvidencijaKorisnika>();
             services.AddScoped<Prijavljivanje>();
             services.AddScoped<RegistracijaTrenera>();
-        }*/
+        }
     }
 }

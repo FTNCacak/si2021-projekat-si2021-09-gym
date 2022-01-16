@@ -7,6 +7,7 @@ using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using TeretanaBusiness;
+using TeretanaData;
 
 namespace TeretanawWeb
 {
@@ -14,7 +15,7 @@ namespace TeretanawWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            VezbaBusiness vezbaBusiness = new VezbaBusiness();
+            VezbaBusiness vezbaBusiness = new VezbaBusiness(new VezbaRepository());
             List<Vezba> vezbe = vezbaBusiness.CitanjeVezbi();
 
             foreach (Vezba vezba in vezbe)

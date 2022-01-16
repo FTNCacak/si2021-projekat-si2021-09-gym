@@ -21,7 +21,7 @@ namespace TeretanawWeb
 
         protected void Unnamed_ServerClick1(object sender, EventArgs e)
         {
-            Response.Redirect("Korisnici.aspx");
+            Response.Redirect("Vezbe.aspx");
         }
     }
 }

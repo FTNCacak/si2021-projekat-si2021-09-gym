@@ -10,7 +10,7 @@ using Shared.Interfaces;
 namespace TeretanaData
 {
     //metoda koja vraca listu korisnika iz baze
-    public class KorisnikRepository//:IKorisnikRepository
+    public class KorisnikRepository:IKorisnikRepository
     {
             public List<Korisnik> ListaKorisnika()
             {

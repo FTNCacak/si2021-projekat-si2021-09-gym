@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Korisnici.aspx.cs" Inherits="TeretanawWeb.Korisnici" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Vezbe.aspx.cs" Inherits="TeretanawWeb.Korisnici" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +24,7 @@
 </asp:ScriptManager>
     <div class="wrapper">
         <div class="text-light w-75">
-            <h1 class="text-center text-bold my-3">Informacije o vezbama</h1>
+            <h1 class="text-center text-bold my-3">Informacije o vežbama</h1>
 
                 <table class="table text-light text-center">
                     <thead>

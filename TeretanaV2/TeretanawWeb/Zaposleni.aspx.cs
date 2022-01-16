@@ -7,6 +7,7 @@ using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using TeretanaBusiness;
+using TeretanaData;
 
 namespace TeretanawWeb
 {
@@ -14,7 +15,8 @@ namespace TeretanawWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            TrenerBusiness trenerBusiness = new TrenerBusiness();
+            
+            TrenerBusiness trenerBusiness = new TrenerBusiness(new TrenerRepository());
             List<Trener> treners = trenerBusiness.VratiTrenere();
            
             foreach(Trener trener in treners)

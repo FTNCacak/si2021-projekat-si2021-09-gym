@@ -9,14 +9,13 @@ using Shared.Interfaces;
 
 namespace TeretanaBusiness
 {
-    public class VezbaBusiness//:IVezbaBusiness
+    public class VezbaBusiness:IVezbaBusiness
     {
-        private readonly VezbaRepository vezbaRepository = new VezbaRepository();
-        /*private readonly IVezbaRepository vezbaRepository;
+        private readonly IVezbaRepository vezbaRepository;
         public VezbaBusiness(IVezbaRepository _ivezbaRepository)
         {
             vezbaRepository = _ivezbaRepository;
-        }*/
+        }
         public List<Vezba> CitanjeVezbi()
         {
             return this.vezbaRepository.CitanjeVezbi();

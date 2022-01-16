@@ -68,4 +68,4 @@ C:\Users\Aleksandra\Documents\si3\TeretanaV2\Shared\obj\Debug\Shared.csproj.Asse
 C:\Users\Aleksandra\Documents\si3\TeretanaV2\Shared\obj\Debug\Shared.csproj.CoreCompileInputs.cache
 C:\Users\Aleksandra\Documents\si3\TeretanaV2\Shared\obj\Debug\Shared.dll
 C:\Users\Aleksandra\Documents\si3\TeretanaV2\Shared\obj\Debug\Shared.pdb
-C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\obj\Debug\Shared.csproj.AssemblyReference.cache
+C:\Users\Korisnik\Documents\si2021-projekat-si2021-09-gym\TeretanaV2\Shared\obj\Debug\Shared.csproj.CopyComplete

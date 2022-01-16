@@ -9,15 +9,13 @@ using Shared.Interfaces;
 
 namespace TeretanaBusiness
 {
-    public class KorisnikBusiness//:IKorisnikBusiness
+    public class KorisnikBusiness:IKorisnikBusiness
     {
-        private readonly KorisnikRepository korisnikRepository = new KorisnikRepository();
-
-        /*private readonly IKorisnikRepository korisnikRepository;
+        private readonly IKorisnikRepository korisnikRepository;
         public KorisnikBusiness(IKorisnikRepository _ikorisnikRepository)
         {
             korisnikRepository = _ikorisnikRepository;
-        }*/
+        }
 
         //metoda za vracanje liste korisnika iz baze
         public List<Korisnik> ListaKorisnika()

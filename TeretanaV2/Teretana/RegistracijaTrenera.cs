@@ -16,23 +16,18 @@ namespace Teretana
 {
     public partial class RegistracijaTrenera : Form
     {
-        private readonly TrenerBusiness itrenerBusiness=new TrenerBusiness();
-
-       /* private readonly ITrenerBusiness itrenerBusiness;
-
-        public RegistracijaTrenera(ITrenerBusiness _itrenerBusiness)
+        private readonly ITrenerBusiness itrenerBusiness;
+        private readonly IKorisnikBusiness ikorisnikBusiness;
+        public RegistracijaTrenera(ITrenerBusiness _itrenerBusiness, IKorisnikBusiness _korisnikBusiness)
         {
             itrenerBusiness = _itrenerBusiness;
-            InitializeComponent();
-        }*/
-        public RegistracijaTrenera()
-        {
+            ikorisnikBusiness = _korisnikBusiness;
             InitializeComponent();
         }
 
         private void btNazadT_Click(object sender, EventArgs e)
         {
-            Prijavljivanje prijavljivanje = new Prijavljivanje();
+            Prijavljivanje prijavljivanje = new Prijavljivanje(itrenerBusiness,ikorisnikBusiness);
             prijavljivanje.Show();
             this.Hide();
         }
@@ -67,7 +62,6 @@ namespace Teretana
                 return;
             }
             //Provera unosa broja telefona
-            //else if (!Regex.Match(tbBrojTelefonaT.Text, @"^[0][6]\d{1}/[1-9]\d{2,3}-\d{3,4}$").Success)
             else if (!Regex.Match(tbBrojTelefonaT.Text, @"^\d{1,3}/[1-9]\d{2,3}-\d{3,4}$").Success)
             {
                 MessageBox.Show("Broj telefona mora biti u formatu xxx/xxx-xxxx", "Nepravilan unos!", MessageBoxButtons.OK, MessageBoxIcon.Error);
